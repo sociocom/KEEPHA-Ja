@@ -1,0 +1,27 @@
+T1	DRUG 0 10	レクサプロ10mg錠
+T2	TIME 13 16	4日目
+T3	TIME 19 23	1日目の
+T4	DISORDER 23 28	強い副作用
+T5	OPINION 31 37	ほとんど解放
+T6	OPINION 41 45	ほどよく
+T7	FUNCTION 45 47	感情
+T8	DISORDER 48 50	麻痺
+T9	DISORDER 59 65	何も感じない
+T10	DISORDER 70 78	何も考えられない
+T11	ANATOMY 85 87	身体
+T12	DISORDER 88 94	つねにだるい
+T13	OPINION 96 100	心は軽い
+T14	OPINION 102 110	むしろ幸福な状態
+T15	URL 117 140	https://t.co/U5QDjDlXUs
+A1	Sentiment T5 positive
+A2	Sentiment T6 positive
+A3	Negation T9 negated
+A4	Negation T10 negated
+A5	Sentiment T13 positive
+A6	Sentiment T14 positive
+R1	HAS_TIME Arg1:T1 Arg2:T2	
+R2	CAUSED Arg1:T1 Arg2:T4	
+R3	HAS_TIME Arg1:T1 Arg2:T3	
+R4	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	
+R5	IS_OPINION_ABOUT Arg1:T6 Arg2:T8	
+R6	EXPERIENCED_IN Arg1:T12 Arg2:T11	

@@ -1,0 +1,16 @@
+T1	TIME 0 2	前回
+T2	DRUG 2 7	レクサプロ
+T3	ROUTE 7 10	飲んだ
+T4	DISORDER 12 15	副作用
+T5	DISORDER 16 19	吐き気
+T6	TIME 25 27	今回
+T7	OPINION 34 46	身体が欲しとったんかのう
+A1	Temporality T1 time
+A2	Negation T5 negated
+A3	Temporality T6 time
+A4	Sentiment T7 neutral
+R1	HAS_TIME Arg1:T2 Arg2:T1	
+R2	HAS_ROUTE Arg1:T2 Arg2:T3	
+R3	CAUSED Arg1:T2 Arg2:T4	
+R4	HAS_TIME Arg1:T2 Arg2:T6	
+R5	CAUSED Arg1:T4 Arg2:T5	

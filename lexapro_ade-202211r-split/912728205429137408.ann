@@ -1,0 +1,10 @@
+T1	TIME 0 2	最近
+T2	CHANGE_TRIGGER 2 8	やめれとった
+T3	DRUG 11 16	レクサプロ
+T4	ROUTE 16 19	飲んだ
+T5	DISORDER 23 26	吐き気
+A1	Temporality T1 point
+A2	Drug_Changes T3 decrease
+R1	SIGNALS_CHANGE_OF Arg1:T2 Arg2:T3	
+R2	HAS_ROUTE Arg1:T3 Arg2:T4	
+R3	HAS_TIME Arg1:T3 Arg2:T1	

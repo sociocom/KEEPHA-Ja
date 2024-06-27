@@ -1,0 +1,15 @@
+T1	TIME 0 3	今日は
+T2	DISORDER 5 8	障がい
+T3	TIME 16 18	毎日
+T4	DRUG 34 39	レクサプロ
+T5	CHANGE_TRIGGER 39 44	飲み始めて
+T6	DISORDER 46 51	超具合悪い
+T7	DISORDER 52 55	副作用
+T8	DISORDER 55 58	辛過ぎ
+A1	Temporality T1 point
+A2	Temporality T3 frequency
+A3	Drug_Changes T4 started
+R1	CAUSED Arg1:T4 Arg2:T6	
+R2	SIGNALS_CHANGE_OF Arg1:T5 Arg2:T4	
+R3	REFERS_TO Arg1:T7 Arg2:T6	
+R4	CAUSED Arg1:T7 Arg2:T8	

@@ -1,0 +1,8 @@
+T1	TIME 6 10	今日から
+T2	DRUG 12 17	レクサプロ
+T3	DISORDER 35 38	副作用
+T4	DISORDER 39 42	吐き気
+T5	TIME 58 64	2週間くらい
+T6	DISORDER 103 106	吐き気
+T7	URL 117 140	https://t.co/sE05IDut2p
+A1	Temporality T5 duration

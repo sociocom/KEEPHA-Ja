@@ -1,0 +1,24 @@
+T1	TIME 0 6	1年半以上の
+T2	DRUG 9 13	抗うつ剤
+T3	DRUG 13 18	レクサプロ
+T4	OPINION 19 28	効き目が実感できる
+T5	TIME 34 37	6日目
+T6	OPINION 38 48	実感できるのは嬉しい
+T7	DISORDER 49 52	副作用
+T8	DISORDER 53 55	眠気
+T9	OPINION 56 61	ストロング
+T10	DISORDER 66 69	うつ病
+T11	DISORDER 71 74	ウツ病
+A1	Temporality T1 duration
+A2	Sentiment T4 positive
+A3	Temporality T5 duration
+A4	Sentiment T6 positive
+A5	Sentiment T9 negative
+R1	REFERS_TO Arg1:T2 Arg2:T3	
+R2	TREATMENT_FOR Arg1:T2 Arg2:T10	
+R3	HAS_TIME Arg1:T3 Arg2:T1	
+R4	CAUSED Arg1:T3 Arg2:T7	
+R5	IS_OPINION_ABOUT Arg1:T4 Arg2:T3	
+R6	REFERS_TO Arg1:T7 Arg2:T8	
+R7	IS_OPINION_ABOUT Arg1:T9 Arg2:T8	
+R8	REFERS_TO Arg1:T10 Arg2:T11	

@@ -1,0 +1,6 @@
+T1	FUNCTION 3 6	寝よう
+T2	DRUG 13 18	レクサプロ
+T3	DISORDER 19 22	副作用
+T4	OPINION 43 48	(ﾉД`)
+A1	Sentiment T4 negative
+R1	CAUSED Arg1:T2 Arg2:T3	

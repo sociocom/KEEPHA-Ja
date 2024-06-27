@@ -1,0 +1,21 @@
+T1	TIME 0 2	毎日
+T2	DRUG 6 11	レクサプロ
+T3	ROUTE 11 14	飲んで
+T4	DISORDER 18 21	副作用
+T5	OPINION 22 30	ほとんど無くなり
+T6	DRUG 38 39	薬
+T7	OPINION 39 52	効いてるのかよくわからない
+T8	DISORDER 53 56	過食欲
+T9	OPINION 57 61	減ってる
+T10	DRUG 68 73	レクサプロ
+A1	Temporality T1 frequency
+A2	Sentiment T5 positive
+A3	Sentiment T7 neutral
+A4	Sentiment T9 positive
+R1	HAS_TIME Arg1:T2 Arg2:T1	
+R2	HAS_ROUTE Arg1:T2 Arg2:T3	
+R3	CAUSED Arg1:T2 Arg2:T4	
+R4	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	
+R5	REFERS_TO Arg1:T6 Arg2:T2	
+R6	IS_OPINION_ABOUT Arg1:T7 Arg2:T6	
+R7	IS_OPINION_ABOUT Arg1:T9 Arg2:T8	

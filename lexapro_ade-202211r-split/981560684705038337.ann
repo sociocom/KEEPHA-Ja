@@ -1,0 +1,17 @@
+T1	FUNCTION 16 18	気分
+T2	OPINION 19 26	下がってしまう
+T3	TIME 33 38	しばらくは
+T4	DRUG 38 43	レクサプロ
+T5	MEASURE 43 47	0.5錠
+T6	TIME 56 59	2週間
+T7	DISORDER 71 77	若干の吐き気
+T8	DRUG 90 96	ワイパックス
+T9	CHANGE_TRIGGER 97 105	出番は少なくなる
+A1	Sentiment T2 negative
+A2	Temporality T3 duration
+A3	Temporality T6 duration
+A4	Drug_Changes T8 decrease
+R1	IS_OPINION_ABOUT Arg1:T2 Arg2:T1	
+R2	HAS_DOSAGE Arg1:T4 Arg2:T5	
+R3	HAS_TIME Arg1:T4 Arg2:T6	
+R4	SIGNALS_CHANGE_OF Arg1:T9 Arg2:T8	

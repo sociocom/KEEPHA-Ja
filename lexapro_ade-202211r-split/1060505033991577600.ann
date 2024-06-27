@@ -1,0 +1,10 @@
+T1	USER 0 12	@maro_Latale
+T2	DRUG 13 18	アルコール
+T3	DISORDER 26 29	吐き気
+T4	TIME 30 35	初回くらい
+T5	OPINION 36 43	収まるとおもう
+T6	DRUG 48 53	レクサプロ
+T7	ROUTE 53 55	のむ
+T8	DISORDER 56 64	シコる気が失せる
+A1	Temporality T4 frequency
+A2	Sentiment T5 neutral

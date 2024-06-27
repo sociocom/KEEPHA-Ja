@@ -1,0 +1,21 @@
+T1	DRUG 0 5	レクサプロ
+T2	ROUTE 5 8	飲んで
+T3	TIME 8 11	明日で
+T4	TIME 11 14	二週間
+T5	DISORDER 15 18	吐き気
+T6	FUNCTION 25 27	食欲
+T7	DISORDER 32 35	脱力感
+T8	FUNCTION 39 42	やる気
+T9	OPINION 51 58	合わないのかな
+A1	Temporality T3 point
+A2	Temporality T4 duration
+A3	Negation T5 negated
+A4	Negation T6 negated
+A5	Negation T8 negated
+A6	Sentiment T9 negative
+R1	HAS_ROUTE Arg1:T1 Arg2:T2	
+R2	HAS_TIME Arg1:T1 Arg2:T4	
+R3	CAUSED Arg1:T1 Arg2:T6	
+R4	CAUSED Arg1:T1 Arg2:T7	
+R5	CAUSED Arg1:T7 Arg2:T8	
+R6	IS_OPINION_ABOUT Arg1:T9 Arg2:T1	

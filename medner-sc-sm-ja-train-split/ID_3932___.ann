@@ -1,0 +1,5 @@
+T1	DISORDER 12 22	アスピリンアレルギー
+T2	DISORDER 28 30	喘息
+T3	DISORDER 38 41	コロナ
+T4	OPINION 47 49	大変
+A1	Sentiment T4 negative

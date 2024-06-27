@@ -1,0 +1,20 @@
+T1	USER 3 15	@hossy_fe_ap
+T2	DRUG 17 21	抗うつ薬
+T3	FUNCTION 38 40	不安
+T4	ROUTE 60 63	飲んで
+T5	DISORDER 63 66	副作用
+T6	OPINION 67 70	少なく
+T7	DISORDER 71 73	うつ
+T8	OPINION 73 75	軽減
+T9	OPINION 94 96	正解
+T10	DRUG 101 106	レクサプロ
+T11	OPINION 107 109	正解
+T12	DRUG 110 116	ラミクタール
+T13	OPINION 117 119	最低
+A1	Sentiment T6 positive
+A2	Sentiment T8 positive
+A3	Sentiment T9 positive
+A4	Sentiment T11 positive
+A5	Sentiment T13 negative
+R1	IS_OPINION_ABOUT Arg1:T11 Arg2:T10	
+R2	IS_OPINION_ABOUT Arg1:T13 Arg2:T12	

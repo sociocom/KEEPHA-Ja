@@ -1,0 +1,23 @@
+T1	TIME 0 2	最近
+T2	FUNCTION 2 4	気分
+T3	OPINION 5 9	落ちてて
+T4	DRUG 10 15	ストラテラ
+T5	DRUG 16 21	レクサプロ
+T6	CHANGE_TRIGGER 25 28	飲まず
+T7	TIME 32 34	今日
+T8	ROUTE 34 40	飲んでみたら
+T9	DISORDER 41 44	吐き気
+A1	Temporality T1 point
+A2	Sentiment T3 negative
+A3	Drug_Changes T4 decrease
+A4	Drug_Changes T5 decrease
+A5	Temporality T7 point
+R1	IS_OPINION_ABOUT Arg1:T3 Arg2:T2	
+R2	HAS_ROUTE Arg1:T4 Arg2:T8	
+R3	CAUSED Arg1:T4 Arg2:T9	
+R4	HAS_TIME Arg1:T4 Arg2:T7	
+R5	HAS_ROUTE Arg1:T5 Arg2:T8	
+R6	CAUSED Arg1:T5 Arg2:T9	
+R7	HAS_TIME Arg1:T5 Arg2:T7	
+R8	SIGNALS_CHANGE_OF Arg1:T6 Arg2:T4	
+R9	SIGNALS_CHANGE_OF Arg1:T6 Arg2:T5	

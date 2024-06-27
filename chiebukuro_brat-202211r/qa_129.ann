@@ -1,0 +1,40 @@
+T1	DRUG 1 11	プエラリアミリフィカ
+T2	DRUG 12 18	サプリメント
+T3	DRUG 39 45	女性ホルモン
+T4	DRUG 81 91	プエラリアミリフィカ
+T5	DRUG 141 149	大豆イソフラボン
+T6	DRUG 150 159	葛の花イソフラボン
+T7	DRUG 160 170	プエラリアミリフィカ
+T8	DRUG 180 188	大豆イソフラボン
+T9	OTHER 239 241	大豆
+T10	DRUG 289 299	プエラリアミリフィカ
+T11	DRUG 385 393	大豆イソフラボン
+T12	DRUG 399 410	ドクターアグリマックス
+T13	TIME 19 23	1年近く
+T14	DISORDER 49 52	副作用
+T15	DISORDER 54 57	血栓症
+T16	DISORDER 58 61	胃がん
+T17	DISORDER 62 65	乳がん
+T18	DISORDER 106 109	副作用
+T19	DISORDER 255 257	乳癌
+T20	DISORDER 262 267	前立腺がん
+T21	DISORDER 318 321	副作用
+T22	DRUG 92 98	女性ホルモン
+T23	TIME 112 114	今後
+A1	Temporality T13 duration
+A2	Temporality T23 point
+R1	REFERS_TO Arg1:T2 Arg2:T1	
+R2	HAS_TIME Arg1:T1 Arg2:T13	
+T24	ROUTE 46 49	打つと
+T25	OPINION 192 204	女性ホルモン様作用が弱め
+A3	Sentiment T25 neutral
+T26	OPINION 208 214	安全性も高く
+A4	Sentiment T26 positive
+T27	OPINION 215 222	効果も得られる
+A5	Sentiment T27 positive
+T28	OPINION 300 312	女性ホルモン様作用が強め
+A6	Sentiment T28 neutral
+T29	OPINION 343 354	作用の強さには差がある
+A7	Sentiment T29 neutral
+T30	OPINION 360 370	安全性はわかりづらい
+A8	Sentiment T30 neutral

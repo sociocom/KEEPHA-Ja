@@ -1,0 +1,20 @@
+T1	ROUTE 11 14	飲める
+T2	DRUG 14 18	抗うつ薬
+T3	DRUG 23 28	レクサプロ
+T4	OPINION 29 35	一番評価高い
+T5	DISORDER 40 43	副作用
+T6	TIME 58 62	昨日から
+T7	CHANGE_TRIGGER 62 67	飲み始めた
+T8	DRUG 67 72	レクサプロ
+T9	OPINION 73 81	期待するしかない
+T10	DRUG 84 88	抗うつ剤
+T11	OPINION 89 97	効果に最大2倍差
+T12	URL 117 140	https://t.co/9hMqQnrTwu
+A1	Sentiment T4 positive
+A2	Temporality T6 duration
+A3	Drug_Changes T8 started
+A4	Sentiment T9 positive
+A5	Sentiment T11 neutral
+R1	SIGNALS_CHANGE_OF Arg1:T7 Arg2:T8	
+R2	HAS_TIME Arg1:T8 Arg2:T6	
+R3	IS_OPINION_ABOUT Arg1:T9 Arg2:T8	

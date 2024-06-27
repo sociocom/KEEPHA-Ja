@@ -1,0 +1,12 @@
+T1	DOCTOR 0 3	主治医
+T2	DRUG 8 12	パキシル
+T3	DRUG 13 18	レクサプロ
+T4	CHANGE_TRIGGER 19 21	変更
+T5	TIME 32 35	初めて
+T6	ROUTE 35 37	飲む
+T7	DRUG 37 38	薬
+T8	DISORDER 41 44	副作用
+T9	ROUTE 62 64	飲む
+A1	Drug_Changes T2 stopped
+A2	Drug_Changes T3 started
+A3	Temporality T5 frequency

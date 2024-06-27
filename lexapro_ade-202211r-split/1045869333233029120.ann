@@ -1,0 +1,17 @@
+T1	DRUG 11 17	リフレックス
+T2	CHANGE_TRIGGER 19 26	なくなりました
+T3	OPINION 30 38	調子⤴️⤴️⤴️
+T4	DOCTOR 46 51	主治医どの
+T5	DRUG 53 59	リフレックス
+T6	DRUG 60 65	レクサプロ
+T7	CHANGE_TRIGGER 70 75	やめようか
+T8	FUNCTION 83 85	食欲
+T9	TIME 86 87	秋
+T10	DRUG 90 96	リフレックス
+T11	CHANGE_TRIGGER 96 100	やめたい
+T12	TIME 122 126	30分は
+T13	FUNCTION 130 133	歩いて
+A1	Drug_Changes T1 stopped
+A2	Sentiment T3 positive
+A3	Temporality T12 duration
+R1	SIGNALS_CHANGE_OF Arg1:T2 Arg2:T1	

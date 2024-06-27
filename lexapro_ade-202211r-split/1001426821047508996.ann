@@ -1,0 +1,7 @@
+T1	DRUG 0 5	レクサプロ
+T2	CHANGE_TRIGGER 6 13	飲み始めてから
+T3	DISORDER 13 21	ワキ汙すごく出る
+T4	DISORDER 32 35	副作用
+A1	Drug_Changes T1 started
+R1	CAUSED Arg1:T1 Arg2:T3	
+R2	SIGNALS_CHANGE_OF Arg1:T2 Arg2:T1	

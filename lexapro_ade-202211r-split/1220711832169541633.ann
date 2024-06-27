@@ -1,0 +1,8 @@
+T1	USER 0 9	@beesrose
+T2	TIME 23 27	今日から
+T3	DRUG 27 32	レクサプロ
+T4	DOCTOR 42 45	主治医
+T5	DISORDER 46 48	胃痛
+T6	DISORDER 74 78	副作用で
+T7	DISORDER 78 80	胃痛
+A1	Temporality T2 point

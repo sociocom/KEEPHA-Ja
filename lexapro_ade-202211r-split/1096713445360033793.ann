@@ -1,0 +1,15 @@
+T1	DRUG 8 13	レクサプロ
+T2	DRUG 14 20	ドグマチール
+T3	TIME 22 25	昨日夜
+T4	ROUTE 25 28	飲んで
+T5	TIME 28 30	今日
+T6	DISORDER 46 48	眠気
+T7	TIME 49 52	1日中
+A1	Temporality T3 None
+A2	Temporality T7 duration
+R1	HAS_TIME Arg1:T1 Arg2:T3	
+R2	HAS_ROUTE Arg1:T1 Arg2:T4	
+R3	HAS_TIME Arg1:T2 Arg2:T3	
+R4	HAS_ROUTE Arg1:T2 Arg2:T4	
+R5	HAS_TIME Arg1:T6 Arg2:T7	
+R6	HAS_TIME Arg1:T6 Arg2:T5	

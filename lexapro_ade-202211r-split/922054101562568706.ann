@@ -1,0 +1,11 @@
+T1	USER 3 14	@_kou_akagi
+T2	DRUG 17 21	パキシル
+T3	DRUG 22 27	レクサプロ
+T4	DRUG 30 52	SSRI（選択的セロトニン再取り込み阻害薬）
+T5	DISORDER 53 64	性行動を抑えようとする
+T6	DRUG 77 81	SSRI
+T7	FUNCTION 93 95	性欲
+T8	DISORDER 105 113	楽しめなくなった
+T9	DRUG 123 124	薬
+T10	DISORDER 125 128	副作用
+A1	Negation T7 negated

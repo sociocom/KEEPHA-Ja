@@ -1,0 +1,10 @@
+T1	USER 0 12	@Pazu_aka777
+T2	DRUG 16 21	レクサプロ
+T3	CHANGE_TRIGGER 23 28	辞めました
+T4	DISORDER 29 32	副作用
+T5	OPINION 33 36	負けた
+A1	Drug_Changes T2 stopped
+A2	Sentiment T5 negative
+R1	CAUSED Arg1:T2 Arg2:T4	
+R2	SIGNALS_CHANGE_OF Arg1:T3 Arg2:T2	
+R3	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	

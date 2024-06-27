@@ -1,0 +1,7 @@
+T1	DISORDER 1 6	クローン病
+T2	DRUG 25 30	ステロイド
+T3	DRUG 31 39	インフリキシマブ
+T4	DISORDER 47 56	マイコプラズマ肺炎
+T5	DISORDER 58 60	肝炎
+T6	DRUG 71 73	同薬
+T7	DISORDER 81 84	副作用

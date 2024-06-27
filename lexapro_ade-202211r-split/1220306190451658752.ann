@@ -1,0 +1,15 @@
+T1	TIME 0 3	今日の
+T2	DISORDER 8 11	デブ化
+T3	DRUG 23 24	薬
+T4	OPINION 35 39	調子いい
+T5	FUNCTION 41 43	食欲
+T6	OPINION 43 47	増してる
+T7	DISORDER 58 62	食い過ぎ
+T8	DOCTOR 66 69	薬剤師
+T9	DRUG 73 78	レクサプロ
+T10	DISORDER 79 81	太る
+T11	URL 117 140	https://t.co/QOJBGX4x8V
+A1	Temporality T1 point
+A2	Sentiment T4 positive
+A3	Sentiment T6 positive
+R1	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	

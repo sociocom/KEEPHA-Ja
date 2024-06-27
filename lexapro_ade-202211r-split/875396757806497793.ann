@@ -1,0 +1,6 @@
+T1	DRUG 0 5	レクサプロ
+T2	OPINION 6 15	なんぼのもんじゃい
+T3	DISORDER 29 32	吐き気
+A1	Sentiment T2 negative
+R1	CAUSED Arg1:T1 Arg2:T3	
+R2	IS_OPINION_ABOUT Arg1:T2 Arg2:T1	

@@ -1,0 +1,9 @@
+T1	DRUG 0 5	レクサプロ
+T2	CHANGE_TRIGGER 8 11	お別れ
+T3	TIME 27 32	1日8時間
+T4	DISORDER 41 47	体力足りない
+T5	DISORDER 49 54	日中の眠気
+T6	OPINION 54 57	ひどい
+A1	Temporality T3 duration
+A2	Sentiment T6 negative
+R1	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	

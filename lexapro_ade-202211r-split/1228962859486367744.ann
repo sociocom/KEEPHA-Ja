@@ -1,0 +1,17 @@
+T1	USER 0 8	@ppp8140
+T2	DRUG 20 25	レクサプロ
+T3	OPINION 25 31	全然問題ない
+T4	OPINION 35 41	結構効果ある
+T5	DISORDER 44 47	副作用
+T6	TIME 57 61	2年ほど
+T7	MEASURE 61 65	10mg
+T8	MEASURE 66 68	2錠
+A1	Sentiment T3 positive
+A2	Sentiment T4 positive
+A3	Negation T5 negated
+A4	Temporality T6 duration
+R1	HAS_TIME Arg1:T2 Arg2:T6	
+R2	HAS_DOSAGE Arg1:T2 Arg2:T7	
+R3	HAS_DOSAGE Arg1:T2 Arg2:T8	
+R4	IS_OPINION_ABOUT Arg1:T3 Arg2:T2	
+R5	IS_OPINION_ABOUT Arg1:T4 Arg2:T2	

@@ -1,0 +1,6 @@
+T1	DRUG 11 16	レクサプロ
+T2	TIME 16 19	5日目
+T3	DISORDER 24 27	副作用
+T4	ANATOMY 40 41	胃
+A1	Negation T3 negated
+R1	HAS_TIME Arg1:T1 Arg2:T2	

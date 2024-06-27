@@ -1,0 +1,22 @@
+T1	DISORDER 12 16	心筋梗塞
+T2	TIME 19 24	2週間ほど
+T3	DRUG 24 30	アミオダロン
+T4	ROUTE 30 32	飲み
+T5	TIME 36 39	3日間
+T6	CHANGE_TRIGGER 39 43	やめたら
+T7	FUNCTION 45 47	血圧
+T8	OPINION 47 51	下がって
+T9	TEST 52 55	再検査
+T10	DISORDER 66 68	異常
+A1	Temporality T2 duration
+A2	Drug_Changes T3 decrease
+A3	Temporality T5 duration
+A4	Sentiment T8 negative
+A5	Negation T10 negated
+R1	HAS_ROUTE Arg1:T3 Arg2:T4	
+R2	HAS_TIME Arg1:T3 Arg2:T2	
+R3	HAS_TIME Arg1:T3 Arg2:T5	
+R4	CAUSED Arg1:T3 Arg2:T7	
+R5	SIGNALS_CHANGE_OF Arg1:T6 Arg2:T3	
+R6	IS_OPINION_ABOUT Arg1:T8 Arg2:T7	
+R7	HAS_RESULT Arg1:T9 Arg2:T10	

@@ -1,0 +1,13 @@
+T1	DISORDER 0 3	吐き気
+T2	CHANGE_TRIGGER 7 9	増量
+T3	DRUG 11 16	レクサプロ
+T4	OPINION 20 21	😥
+T5	TIME 28 31	昨年も
+T6	FUNCTION 40 45	思い出した
+A1	Drug_Changes T3 increase
+A2	Sentiment T4 negative
+A3	Temporality T5 point
+R1	HAS_TIME Arg1:T1 Arg2:T5	
+R2	SIGNALS_CHANGE_OF Arg1:T2 Arg2:T3	
+R3	CAUSED Arg1:T3 Arg2:T1	
+R4	IS_OPINION_ABOUT Arg1:T4 Arg2:T1	

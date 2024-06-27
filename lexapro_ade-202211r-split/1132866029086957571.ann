@@ -1,0 +1,31 @@
+T1	DRUG 0 5	レクサプロ
+T2	CHANGE_TRIGGER 5 10	飲み始めて
+T3	TIME 10 13	今日で
+T4	TIME 13 18	１１４日目
+T5	MEASURE 19 23	１０mg
+T6	TIME 24 28	８８日目
+T7	TIME 31 33	１日
+T8	DRUG 33 38	レクサプロ
+T9	CHANGE_TRIGGER 38 43	飲み忘れた
+T10	DISORDER 46 49	副作用
+T11	OPINION 60 64	良かった
+T12	TIME 67 70	昨日は
+T13	TIME 95 98	今日は
+T14	TIME 107 110	初めて
+T15	URL 117 140	https://t.co/ngW6rqzyQk
+A1	Drug_Changes T1 started
+A2	Temporality T3 point
+A3	Temporality T7 duration
+A4	Drug_Changes T8 decrease
+A5	Negation T10 negated
+A6	Sentiment T11 positive
+A7	Temporality T12 point
+A8	Temporality T13 point
+R1	HAS_TIME Arg1:T1 Arg2:T3	
+R2	HAS_TIME Arg1:T1 Arg2:T4	
+R3	HAS_DOSAGE Arg1:T1 Arg2:T5	
+R4	HAS_TIME Arg1:T1 Arg2:T6	
+R5	SIGNALS_CHANGE_OF Arg1:T2 Arg2:T1	
+R6	HAS_TIME Arg1:T8 Arg2:T7	
+R7	SIGNALS_CHANGE_OF Arg1:T9 Arg2:T8	
+R8	IS_OPINION_ABOUT Arg1:T11 Arg2:T10	

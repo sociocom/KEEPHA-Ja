@@ -1,0 +1,5 @@
+T1	DRUG 0 7	ミノサイクリン
+T2	DISORDER 18 21	副作用
+T3	OPINION 22 32	めちゃくちゃ強すぎて
+T4	FUNCTION 32 34	怖い
+A1	Sentiment T3 negative

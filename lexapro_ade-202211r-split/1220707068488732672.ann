@@ -1,0 +1,13 @@
+T1	DRUG 2 8	ミルタザピン
+T2	DISORDER 9 13	食欲向上
+T3	DRUG 38 43	レクサプロ
+T4	DRUG 47 52	レクサプロ
+T5	OPINION 53 60	良いかもしれん
+T6	DRUG 67 73	ミルタザピン
+T7	TIME 73 75	2年
+T8	DISORDER 83 88	体重増えた
+A1	Sentiment T5 neutral
+A2	Temporality T7 duration
+R1	CAUSED Arg1:T1 Arg2:T2	
+R2	HAS_TIME Arg1:T6 Arg2:T7	
+R3	CAUSED Arg1:T6 Arg2:T8	

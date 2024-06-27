@@ -1,0 +1,8 @@
+T1	USER 0 10	@ShiShiKoR
+T2	USER 11 16	ししこさん
+T3	DRUG 25 30	レクサプロ
+T4	DISORDER 31 35	副作用か
+T5	OPINION 53 59	仕方ないいい
+A1	Sentiment T5 neutral
+R1	CAUSED Arg1:T3 Arg2:T4	
+R2	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	

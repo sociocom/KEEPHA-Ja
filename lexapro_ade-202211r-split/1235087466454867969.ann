@@ -1,0 +1,16 @@
+T1	OPINION 4 7	怖くて
+T2	DRUG 7 12	レクサプロ
+T3	CHANGE_TRIGGER 12 17	飲めてない
+T4	DISORDER 19 21	嘔吐
+T5	DISORDER 28 34	気持ち悪くて
+T6	DISORDER 37 42	食べれない
+T7	OPINION 54 66	違う薬に変えてもらいたい
+A1	Sentiment T1 negative
+A2	Drug_Changes T2 decrease
+A3	Negation T4 negated
+A4	Sentiment T7 negative
+R1	IS_OPINION_ABOUT Arg1:T1 Arg2:T2	
+R2	CAUSED Arg1:T2 Arg2:T5	
+R3	SIGNALS_CHANGE_OF Arg1:T3 Arg2:T2	
+R4	CAUSED Arg1:T5 Arg2:T6	
+R5	IS_OPINION_ABOUT Arg1:T7 Arg2:T2	

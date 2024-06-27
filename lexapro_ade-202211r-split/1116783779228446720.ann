@@ -1,0 +1,9 @@
+T1	USER 0 12	@hayflower88
+T2	DRUG 30 35	レクサプロ
+T3	DISORDER 42 45	副作用
+T4	DISORDER 47 52	軽い吐き気
+T5	DRUG 63 70	ジェイゾロフト
+T6	MEASURE 71 75	1回1錠
+T7	URL 80 103	https://t.co/oAsRf1eRZl
+R1	REFERS_TO Arg1:T3 Arg2:T4	
+R2	HAS_DOSAGE Arg1:T5 Arg2:T6	

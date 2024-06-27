@@ -1,0 +1,10 @@
+T1	USER 0 12	@solatesu_lr
+T2	DISORDER 17 25	結構しんどかった
+T3	DRUG 26 31	レクサプロ
+T4	DRUG 37 41	抗うつ剤
+T5	DISORDER 65 68	副作用
+T6	OPINION 68 73	少なかった
+T7	FUNCTION 96 99	嬉しい
+A1	Sentiment T6 positive
+R1	CAUSED Arg1:T3 Arg2:T5	
+R2	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	

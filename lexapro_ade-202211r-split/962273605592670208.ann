@@ -1,0 +1,12 @@
+T1	USER 0 14	@panicovercome
+T2	DRUG 18 20	お薬
+T3	ROUTE 20 25	飲まれてる
+T4	DRUG 40 45	レクサプロ
+T5	TIME 45 48	最初の
+T6	DISORDER 48 51	副作用
+T7	DISORDER 52 55	不快感
+T8	OPINION 60 65	かなり効果
+T9	DRUG 68 70	お薬
+T10	USER 76 82	rinaさん
+A1	Sentiment T8 positive
+R1	HAS_ROUTE Arg1:T2 Arg2:T3	

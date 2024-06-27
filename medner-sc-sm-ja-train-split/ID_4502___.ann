@@ -1,0 +1,5 @@
+T1	DRUG 0 8	メトトレキサート
+T2	DRUG 9 14	免疫抑制剤
+T3	DISORDER 18 20	風邪
+T4	OPINION 26 28	大変
+A1	Sentiment T4 negative

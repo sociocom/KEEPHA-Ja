@@ -1,0 +1,17 @@
+T1	DRUG 0 5	レクサプロ
+T2	DISORDER 6 9	副作用
+T3	FUNCTION 10 12	怖い
+T4	DISORDER 21 24	吐き気
+T5	TIME 39 45	2週間くらい
+T6	DISORDER 53 56	副作用
+T7	OPINION 79 82	ツライ
+T8	DISORDER 87 91	重度の鬱
+T9	TIME 95 98	2週間
+T10	DISORDER 110 115	落ち込んだ
+T11	TIME 118 122	2週間は
+T12	OPINION 122 129	やばい気がする
+A1	Temporality T5 duration
+A2	Sentiment T7 negative
+A3	Temporality T9 duration
+A4	Temporality T11 duration
+A5	Sentiment T12 negative

@@ -1,0 +1,7 @@
+T1	DRUG 0 6	シタラプラム
+T2	DRUG 14 18	抗うつ薬
+T3	DRUG 21 26	レクサプロ
+T4	DRUG 33 39	ジェネリック
+T5	DRUG 48 51	先発品
+T6	DISORDER 100 103	副作用
+T7	URL 114 137	https://t.co/rVp2N3HPGI

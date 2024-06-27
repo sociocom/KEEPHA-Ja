@@ -1,0 +1,19 @@
+T1	TIME 0 4	昨日から
+T2	DRUG 7 12	レクサプロ
+T3	ROUTE 12 14	飲む
+T4	DISORDER 24 27	副作用
+T5	DISORDER 32 38	すごく眠くて
+T6	TIME 38 40	今日
+T7	DISORDER 43 45	爆睡
+T8	OPINION 53 59	体はすごく楽
+T9	OPINION 66 77	どう捉えたらいいのか笑
+A1	Temporality T1 duration
+A2	Temporality T6 duration
+A3	Sentiment T8 positive
+A4	Sentiment T9 neutral
+R1	HAS_ROUTE Arg1:T2 Arg2:T3	
+R2	HAS_TIME Arg1:T2 Arg2:T1	
+R3	CAUSED Arg1:T2 Arg2:T4	
+R4	REFERS_TO Arg1:T4 Arg2:T5	
+R5	REFERS_TO Arg1:T5 Arg2:T7	
+R6	HAS_TIME Arg1:T7 Arg2:T6	

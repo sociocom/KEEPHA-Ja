@@ -1,0 +1,13 @@
+T1	USER 0 8	@min_gov
+T2	DRUG 9 15	サインバルタ
+T3	DRUG 16 20	抗うつ薬
+T4	DRUG 21 26	SNRI系
+T5	DRUG 30 36	サインバルタ
+T6	DISORDER 40 43	副作用
+T7	DRUG 73 77	抗うつ薬
+T8	DRUG 81 86	SSRI系
+T9	DRUG 87 92	レクサプロ
+T10	OPINION 103 107	ダメなら
+T11	DRUG 107 111	パキシル
+T12	URL 117 140	https://t.co/8JpXycJIeR
+A1	Sentiment T10 negative

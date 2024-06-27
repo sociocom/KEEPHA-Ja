@@ -1,0 +1,12 @@
+T1	USER 0 10	@Momo_768m
+T2	OPINION 11 30	合う合わないは飲んでみないと分からない
+T3	USER 47 51	モモさん
+T4	DISORDER 53 56	副作用
+T5	DRUG 70 75	レクサプロ
+T6	DISORDER 76 80	離脱症状
+T7	OPINION 80 85	少ないほう
+T8	CHANGE_TRIGGER 96 100	やめたり
+T9	OPINION 105 108	大丈夫
+A1	Sentiment T2 neutral
+A2	Sentiment T7 positive
+A3	Sentiment T9 negative

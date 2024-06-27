@@ -1,0 +1,5 @@
+T1	FUNCTION 12 20	インスリン分泌能
+T2	DRUG 31 37	メトホルミン
+T3	DRUG 41 49	糖質コルチコイド
+T4	DISORDER 55 60	食後高血糖
+T5	DISORDER 61 63	肥満

@@ -1,0 +1,21 @@
+T1	DRUG 0 5	レクサプロ
+T2	DRUG 22 24	お薬
+T3	TIME 41 44	1日目
+T4	OPINION 47 51	なんとも
+T5	DRUG 54 59	レクサプロ
+T6	TIME 61 63	昨日
+T7	DRUG 64 70	プロチゾラム
+T8	ROUTE 71 75	飲んでる
+T9	DISORDER 78 80	眠気
+T10	OPINION 81 94	そんなになくなってしまった
+T11	OPINION 95 108	ほんと人によって それぞれ
+T12	DRUG 114 116	お薬
+T13	ANATOMY 119 121	身体
+A1	Sentiment T4 neutral
+A2	Sentiment T10 positive
+A3	Sentiment T11 neutral
+R1	HAS_TIME Arg1:T5 Arg2:T3	
+R2	HAS_ROUTE Arg1:T7 Arg2:T8	
+R3	HAS_TIME Arg1:T7 Arg2:T6	
+R4	IS_OPINION_ABOUT Arg1:T10 Arg2:T9	
+R5	IS_OPINION_ABOUT Arg1:T11 Arg2:T12	

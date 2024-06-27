@@ -1,0 +1,12 @@
+T1	USER 0 10	@tuabittsi
+T2	OPINION 24 30	期待できそう
+T3	DRUG 33 38	レクサプロ
+T4	DISORDER 38 41	副作用
+T5	OPINION 41 44	少ない
+T6	OPINION 51 60	個人差がありますね
+T7	DRUG 61 68	ジェイゾロフト
+T8	OPINION 69 77	名前がかっこいい
+A1	Sentiment T2 positive
+A2	Sentiment T5 positive
+A3	Sentiment T6 neutral
+A4	Sentiment T8 positive

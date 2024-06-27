@@ -1,0 +1,26 @@
+T1	TIME 0 4	2回目の
+T2	DRUG 4 6	眠剤
+T3	DRUG 16 21	マイスリー
+T4	MEASURE 21 22	1
+T5	DRUG 23 28	ベンザリン
+T6	MEASURE 28 29	1
+T7	DRUG 30 35	レクサプロ
+T8	MEASURE 35 36	2
+T9	FUNCTION 37 39	熟睡
+T10	TIME 50 53	2回目
+T11	TIME 58 59	今
+T12	FUNCTION 65 67	眠気
+T13	TIME 79 82	2回目
+T14	OPINION 85 93	熟睡できるといい
+A1	Temporality T1 frequency
+A2	Temporality T10 frequency
+A3	Temporality T11 point
+A4	Temporality T13 frequency
+A5	Sentiment T14 neutral
+R1	HAS_TIME Arg1:T2 Arg2:T1	
+R2	REFERS_TO Arg1:T2 Arg2:T3	
+R3	REFERS_TO Arg1:T2 Arg2:T5	
+R4	HAS_DOSAGE Arg1:T3 Arg2:T4	
+R5	HAS_DOSAGE Arg1:T5 Arg2:T6	
+R6	HAS_DOSAGE Arg1:T7 Arg2:T8	
+R7	MISC Arg1:T12 Arg2:T11	

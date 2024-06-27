@@ -1,0 +1,9 @@
+T1	DRUG 0 5	レクサプロ
+T2	DISORDER 6 9	副作用
+T3	OPINION 10 19	ちょっと落ち着いて
+T4	OPINION 20 27	調子戻ってきた
+T5	FUNCTION 53 55	寝よ
+A1	Sentiment T3 positive
+A2	Sentiment T4 positive
+R1	CAUSED Arg1:T1 Arg2:T2	
+R2	IS_OPINION_ABOUT Arg1:T3 Arg2:T2	

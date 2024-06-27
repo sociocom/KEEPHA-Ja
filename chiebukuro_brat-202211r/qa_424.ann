@@ -1,0 +1,48 @@
+T1	DISORDER 17 26	新型コロナウィルス
+T5	DISORDER 131 134	乳がん
+T6	DISORDER 303 306	乳がん
+T7	DISORDER 310 314	免疫抑制
+T8	DISORDER 334 339	間質性肺炎
+T9	DISORDER 343 346	副作用
+T10	DISORDER 373 374	癌
+T11	DISORDER 390 394	ストレス
+T13	DISORDER 436 437	癌
+T14	DISORDER 438 440	持病
+T15	DISORDER 514 517	乳がん
+T16	OTHER 547 552	ステージ1
+T18	DISORDER 584 593	新型コロナウィルス
+T19	FUNCTION 258 260	免疫
+T20	FUNCTION 146 148	免疫
+T21	DISORDER 161 163	病気
+T22	OTHER 522 526	温存手術
+T17	OTHER 57 62	放射線治療
+T23	OTHER 103 108	放射線治療
+T24	OTHER 530 535	放射線治療
+T25	TIME 1 3	先日
+T26	TIME 413 416	現在の
+T27	FUNCTION 112 115	免疫力
+T29	OTHER 324 326	照射
+T30	PERSONAL_INFORMATION 9 16	岡江久美子さん
+T31	OTHER 27 33	亡くなられて
+T28	FUNCTION 66 69	免疫力
+T32	FUNCTION 398 400	免疫
+A1	Temporality T25 point
+A2	Temporality T26 point
+A3	Negation T13 negated
+A4	Negation T14 negated
+T33	OPINION 594 596	脅威
+A5	Sentiment T33 negative
+T34	OTHER 381 383	治療
+T2	DISORDER 49 52	乳がん
+A6	Negation T28 negated
+A7	Negation T27 negated
+A8	Negation T32 negated
+T3	OTHER 553 555	初期
+T4	OPINION 556 574	命を脅かすような状態ではなかったはず
+A9	Sentiment T4 neutral
+T12	OPINION 181 193	数値化できるものではない
+A10	Sentiment T12 neutral
+T35	OPINION 195 205	目安などもありません
+A11	Sentiment T35 neutral
+T37	OPINION 236 257	どのくらいで戻るといえるものではありません
+A13	Sentiment T37 neutral

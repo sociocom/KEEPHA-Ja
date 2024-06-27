@@ -1,0 +1,11 @@
+T1	USER 0 16	@dceae492ceab479
+T2	DRUG 35 40	レクサプロ
+T3	FUNCTION 41 44	やる気
+T4	DISORDER 67 70	吐き気
+T5	OPINION 71 78	そこまでしない
+T6	OPINION 80 85	効果楽しみ
+A1	Sentiment T5 neutral
+A2	Sentiment T6 positive
+R1	CAUSED Arg1:T2 Arg2:T4	
+R2	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	
+R3	IS_OPINION_ABOUT Arg1:T6 Arg2:T2	

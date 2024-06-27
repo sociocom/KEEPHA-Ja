@@ -1,0 +1,23 @@
+T1	TIME 0 4	この前の
+T2	DRUG 4 6	お薬
+T3	OPINION 6 12	効かなかった
+T4	DRUG 15 20	新しいお薬
+T5	CHANGE_TRIGGER 21 23	変更
+T6	DRUG 26 31	レクサプロ
+T7	ROUTE 31 35	飲んでる
+T8	DISORDER 48 51	副作用
+T9	DISORDER 52 55	吐き気
+T10	TIME 63 66	今の所
+T11	OPINION 66 72	落ち着いてる
+T12	OPINION 74 84	大丈夫かな(;△;)
+A1	Temporality T1 point
+A2	Drug_Changes T2 stopped
+A3	Sentiment T3 negative
+A4	Drug_Changes T4 started
+A5	Temporality T10 point
+A6	Sentiment T11 positive
+A7	Sentiment T12 negative
+R1	HAS_TIME Arg1:T2 Arg2:T1	
+R2	IS_OPINION_ABOUT Arg1:T3 Arg2:T2	
+R3	SIGNALS_CHANGE_OF Arg1:T5 Arg2:T4	
+R4	SIGNALS_CHANGE_OF Arg1:T5 Arg2:T2	

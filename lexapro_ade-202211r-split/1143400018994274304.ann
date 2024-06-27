@@ -1,0 +1,22 @@
+T1	DRUG 0 4	抗うつ薬
+T2	DRUG 5 10	レクサプロ
+T3	DISORDER 11 14	副作用
+T4	DISORDER 16 18	うつ
+T5	DISORDER 19 21	辛さ
+T6	OPINION 26 29	ダウン
+T7	DISORDER 43 46	辛くて
+T8	FUNCTION 46 49	泣けて
+T9	OPINION 51 74	(´°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥｀)
+T10	FUNCTION 94 97	悲しみ
+T11	FUNCTION 98 99	涙
+T12	OPINION 99 112	(´°̥̥̥̥̥̥̥̥ω…
+T13	URL 113 136	https://t.co/R8rhL0ip9r
+A1	Sentiment T6 negative
+A2	Sentiment T9 negative
+A3	Sentiment T12 negative
+R1	REFERS_TO Arg1:T1 Arg2:T2	
+R2	TREATMENT_FOR Arg1:T1 Arg2:T4	
+R3	CAUSED Arg1:T2 Arg2:T3	
+R4	CAUSED Arg1:T4 Arg2:T5	
+R5	REFERS_TO Arg1:T5 Arg2:T7	
+R6	CAUSED Arg1:T7 Arg2:T8	

@@ -1,0 +1,9 @@
+T1	DRUG 12 17	メサラジン
+T2	DRUG 18 22	リアルダ
+T3	DRUG 24 30	ジェネリック
+T4	DRUG 35 36	薬
+T5	DISORDER 44 50	潰瘍性大腸炎
+T6	DRUG 54 58	リアルダ
+T7	DRUG 61 65	リアルダ
+T8	OPINION 68 74	使いやすそう
+A1	Sentiment T8 positive

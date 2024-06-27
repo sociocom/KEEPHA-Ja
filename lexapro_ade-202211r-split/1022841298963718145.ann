@@ -1,0 +1,6 @@
+T1	DOCTOR 7 10	主治医
+T2	OPINION 12 24	水分の摂り過ぎじゃないか
+T3	DRUG 52 57	レクサプロ
+T4	DISORDER 58 61	副作用
+A1	Sentiment T2 neutral
+R1	CAUSED Arg1:T3 Arg2:T4	

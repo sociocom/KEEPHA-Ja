@@ -1,0 +1,11 @@
+T1	USER 0 2	るね
+T2	DRUG 3 8	レクサプロ
+T3	DRUG 13 17	パキシル
+T4	DISORDER 19 22	副作用
+T5	OPINION 23 26	少ない
+T6	OPINION 27 31	良さそう
+A1	Sentiment T5 positive
+A2	Sentiment T6 positive
+R1	CAUSED Arg1:T2 Arg2:T4	
+R2	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	
+R3	IS_OPINION_ABOUT Arg1:T6 Arg2:T2	

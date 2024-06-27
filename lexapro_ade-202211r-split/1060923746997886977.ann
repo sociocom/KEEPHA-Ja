@@ -1,0 +1,8 @@
+T1	DRUG 0 5	レクサプロ
+T2	TIME 7 8	今
+T3	DISORDER 16 19	副作用
+T4	OPINION 20 24	耐えてる
+A1	Temporality T2 point
+A2	Sentiment T4 negative
+R1	CAUSED Arg1:T1 Arg2:T3	
+R2	IS_OPINION_ABOUT Arg1:T4 Arg2:T3	

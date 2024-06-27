@@ -1,0 +1,25 @@
+T1	DRUG 0 5	レクサプロ
+T2	DRUG 23 30	めっちょいい薬
+T3	DISORDER 40 43	副作用
+T4	OPINION 44 51	深刻だったから
+T5	CHANGE_TRIGGER 51 57	辞めちゃった
+T6	TIME 58 61	今でも
+T7	DRUG 67 74	トリプトファン
+T8	ROUTE 74 78	飲んでる
+T9	TIME 78 79	今
+T10	DRUG 92 96	SSRI
+T11	OPINION 96 103	増やしてほしい
+T12	DRUG 104 108	ゾロフト
+T13	DRUG 111 116	アモキサ…
+T14	URL 117 140	https://t.co/aWlNcFbulA
+A1	Drug_Changes T1 stopped
+A2	Sentiment T4 negative
+A3	Temporality T6 duration
+A4	Temporality T9 point
+A5	Sentiment T11 positive
+R1	CAUSED Arg1:T1 Arg2:T3	
+R2	REFERS_TO Arg1:T2 Arg2:T1	
+R3	IS_OPINION_ABOUT Arg1:T4 Arg2:T3	
+R4	SIGNALS_CHANGE_OF Arg1:T5 Arg2:T1	
+R5	HAS_ROUTE Arg1:T7 Arg2:T8	
+R6	HAS_TIME Arg1:T7 Arg2:T9	

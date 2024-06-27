@@ -1,0 +1,8 @@
+T1	TIME 0 5	明後日から
+T2	DRUG 8 13	レクサプロ
+T3	MEASURE 14 18	0.5錠
+T4	CHANGE_TRIGGER 18 24	飲み始めたい
+T5	DISORDER 36 39	副作用
+T6	DISORDER 50 56	パニック障害
+T7	DRUG 58 63	レクサプロ
+A1	Temporality T1 point

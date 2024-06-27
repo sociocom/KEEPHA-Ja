@@ -1,0 +1,6 @@
+T1	DISORDER 7 12	少し吐き気
+T2	DRUG 18 23	レクサプロ
+T3	OPINION 23 29	飲みたくない
+A1	Sentiment T3 negative
+R1	CAUSED Arg1:T2 Arg2:T1	
+R2	IS_OPINION_ABOUT Arg1:T3 Arg2:T2	

@@ -1,0 +1,27 @@
+T1	USER 0 14	@nazonoaraisan
+T2	USER 15 20	アライさん
+T3	DRUG 21 26	レクサプロ
+T4	CHANGE_TRIGGER 26 31	飲み始めて
+T5	TIME 33 36	初めて
+T6	TIME 46 49	最初は
+T7	DRUG 49 54	レクサプロ
+T8	DISORDER 55 58	副作用
+T9	DISORDER 73 74	鬱
+T10	DISORDER 75 77	症状
+T11	TIME 87 91	午前中が
+T12	DISORDER 91 95	しんどく
+T13	TIME 96 99	午後に
+T14	OPINION 99 101	回復
+T15	OPINION 107 110	不思議
+A1	Drug_Changes T3 started
+A2	Temporality T6 None
+A3	Temporality T11 duration
+A4	Temporality T13 None
+A5	Sentiment T14 positive
+A6	Sentiment T15 neutral
+R1	SIGNALS_CHANGE_OF Arg1:T4 Arg2:T3	
+R2	CAUSED Arg1:T9 Arg2:T10	
+R3	HAS_TIME Arg1:T10 Arg2:T13	
+R4	HAS_TIME Arg1:T12 Arg2:T11	
+R5	IS_OPINION_ABOUT Arg1:T14 Arg2:T10	
+R6	IS_OPINION_ABOUT Arg1:T15 Arg2:T10	

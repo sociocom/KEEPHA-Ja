@@ -1,0 +1,15 @@
+T1	TIME 0 3	昨日に
+T2	DISORDER 12 16	イライラ
+T3	DISORDER 19 22	副作用
+T4	DRUG 29 34	レクサプロ
+T5	MEASURE 35 41	1日0.5錠
+T6	MEASURE 43 47	1日1錠
+T7	CHANGE_TRIGGER 48 50	した
+A1	Temporality T1 point
+A2	Negation T2 negated
+A3	Negation T3 negated
+A4	Drug_Changes T4 increase
+R1	REFERS_TO Arg1:T2 Arg2:T3	
+R2	HAS_DOSAGE Arg1:T4 Arg2:T6	
+R3	HAS_TIME Arg1:T4 Arg2:T1	
+R4	SIGNALS_CHANGE_OF Arg1:T7 Arg2:T4	

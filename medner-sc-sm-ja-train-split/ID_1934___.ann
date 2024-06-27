@@ -1,0 +1,7 @@
+T1	DRUG 15 20	メサラジン
+T2	DRUG 21 25	アザニン
+T3	DISORDER 53 55	風邪
+T4	OPINION 56 58	悪化
+T5	OPINION 69 71	辛い
+A1	Sentiment T4 negative
+A2	Sentiment T5 negative

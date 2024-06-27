@@ -1,0 +1,13 @@
+T1	USER 0 12	@sachiko_121
+T2	DRUG 13 18	レクサプロ
+T3	DRUG 21 27	とてもいい薬
+T4	DRUG 39 42	いい薬
+T5	OPINION 44 60	体質によっては合わない人もいます
+T6	ROUTE 70 74	飲んでる
+T7	DRUG 74 80	メイラックス
+T8	DISORDER 91 94	副作用
+T9	OPINION 99 101	大変
+T10	URL 117 140	https://t.co/Yf25Szpszh
+A1	Sentiment T5 neutral
+A2	Sentiment T9 negative
+R1	HAS_ROUTE Arg1:T7 Arg2:T6	

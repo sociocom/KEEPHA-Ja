@@ -1,0 +1,14 @@
+T1	DRUG 9 10	薬
+T2	DISORDER 11 14	副作用
+T3	DISORDER 15 19	過眠気味
+T4	DRUG 20 25	レクサプロ
+T5	OPINION 26 30	やめたい
+T6	DISORDER 35 38	不安症
+T7	URL 50 73	https://t.co/mXWxIqcKiZ
+T8	USER 75 79	アメブロ
+T9	USER 80 97	@ameba_officialさん
+A1	Sentiment T5 negative
+R1	CAUSED Arg1:T1 Arg2:T2	
+R2	REFERS_TO Arg1:T2 Arg2:T3	
+R3	TREATMENT_FOR Arg1:T4 Arg2:T6	
+R4	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	

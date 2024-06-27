@@ -1,0 +1,10 @@
+T1	TIME 0 3	今日の
+T2	TIME 3 7	夕食後の
+T3	DRUG 10 15	レクサプロ
+T4	TIME 15 18	5日目
+T5	DISORDER 19 26	目立った副作用
+A1	Temporality T1 point
+A2	Temporality T2 frequency
+A3	Negation T5 negated
+R1	HAS_TIME Arg1:T3 Arg2:T4	
+R2	HAS_TIME Arg1:T3 Arg2:T2	

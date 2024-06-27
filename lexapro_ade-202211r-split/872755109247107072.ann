@@ -1,0 +1,6 @@
+T1	DRUG 0 5	レクサプロ
+T2	DISORDER 6 9	吐き気
+T3	OPINION 9 11	最悪
+A1	Sentiment T3 negative
+R1	CAUSED Arg1:T1 Arg2:T2	
+R2	IS_OPINION_ABOUT Arg1:T3 Arg2:T1	

@@ -1,0 +1,6 @@
+T1	DRUG 12 22	シクロフォスファミド
+T2	DRUG 24 28	抗がん剤
+T3	DISORDER 31 34	癌細胞
+T4	DISORDER 48 54	C関連血管炎
+T5	OPINION 56 58	有効
+A1	Sentiment T5 positive

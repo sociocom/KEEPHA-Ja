@@ -1,0 +1,11 @@
+T1	DRUG 13 19	アミオダロン
+T2	ROUTE 19 22	飲んで
+T3	DISORDER 24 27	低血圧
+T4	TIME 41 45	昨日から
+T5	DRUG 48 51	降圧剤
+T6	ROUTE 51 56	飲んどます
+T7	TIME 58 61	今朝は
+T8	OPINION 67 72	落ち着いて
+A1	Sentiment T8 positive
+R1	HAS_TIME Arg1:T5 Arg2:T4	
+R2	HAS_ROUTE Arg1:T5 Arg2:T6	

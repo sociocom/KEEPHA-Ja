@@ -1,0 +1,12 @@
+T1	TIME 5 8	今晩は
+T2	DRUG 8 13	レクサプロ
+T3	CHANGE_TRIGGER 17 21	おやすみ
+T4	TIME 24 26	明日
+T5	DISORDER 26 29	副作用
+T6	OPINION 30 41	あまりなければうれしい
+A1	Temporality T1 point
+A2	Drug_Changes T2 decrease
+A3	Temporality T4 point
+A4	Sentiment T6 neutral
+R1	HAS_TIME Arg1:T2 Arg2:T1	
+R2	SIGNALS_CHANGE_OF Arg1:T3 Arg2:T2	

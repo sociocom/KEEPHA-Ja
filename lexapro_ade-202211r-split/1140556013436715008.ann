@@ -1,0 +1,5 @@
+T1	DRUG 1 6	レクサプロ
+T2	DISORDER 16 20	副作用が
+T3	DISORDER 25 28	吐き気
+T4	OPINION 28 30	やだ
+A1	Sentiment T4 negative

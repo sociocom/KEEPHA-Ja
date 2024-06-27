@@ -1,0 +1,19 @@
+T1	DRUG 0 5	レクサプロ
+T2	TIME 16 20	明日昼頃
+T3	DISORDER 20 24	離脱症状
+T4	DRUG 38 43	レクサプロ
+T5	DISORDER 46 48	離脱
+T6	OPINION 48 53	キツくない
+T7	ROUTE 60 64	飲んでた
+T8	DISORDER 79 81	震え
+T9	DISORDER 82 87	シャンビリ
+T10	DISORDER 88 90	嘔吐
+T11	DISORDER 91 94	めまい
+T12	TIME 106 108	明日
+T13	TIME 109 112	明後日
+T14	URL 117 140	https://t.co/HwQH5iVKnK
+A1	Temporality T2 point
+A2	Sentiment T6 neutral
+A3	Temporality T12 point
+A4	Temporality T13 point
+R1	HAS_ROUTE Arg1:T4 Arg2:T7	

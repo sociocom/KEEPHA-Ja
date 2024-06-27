@@ -1,0 +1,15 @@
+T1	TIME 0 4	前の夜の
+T2	DRUG 4 8	抗うつ剤
+T3	DRUG 9 13	クサプロ
+T4	DISORDER 16 18	眠気
+T5	TIME 28 31	食後は
+T6	TIME 31 34	すぐに
+T7	DISORDER 34 38	眠くなる
+A1	Temporality T1 None
+A2	Temporality T5 None
+R1	REFERS_TO Arg1:T2 Arg2:T3	
+R2	CAUSED Arg1:T2 Arg2:T4	
+R3	HAS_TIME Arg1:T3 Arg2:T1	
+R4	REFERS_TO Arg1:T4 Arg2:T7	
+R5	MISC Arg1:T5 Arg2:T6	
+R6	HAS_TIME Arg1:T7 Arg2:T6	

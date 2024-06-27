@@ -1,0 +1,13 @@
+T1	USER 3 16	@h_takayuki45
+T2	USER 18 34	@Supernaturalmoc
+T3	DRUG 36 41	レクサプロ
+T4	TIME 42 44	前は
+T5	DRUG 44 51	ジェイドロフト
+T6	OPINION 63 67	効果なし
+T7	DISORDER 69 72	副作用
+T8	DISORDER 73 77	排尿困難
+A1	Temporality T4 point
+A2	Sentiment T6 negative
+R1	CAUSED Arg1:T5 Arg2:T7	
+R2	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	
+R3	REFERS_TO Arg1:T7 Arg2:T8	

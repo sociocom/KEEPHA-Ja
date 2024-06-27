@@ -1,0 +1,8 @@
+T1	DRUG 0 5	メサラジン
+T2	OPINION 6 10	効かない
+T3	TIME 15 21	12週間後に
+T4	DISORDER 21 23	発症
+T5	DISORDER 25 31	潰瘍性大腸炎
+A1	Sentiment T2 negative
+R1	IS_OPINION_ABOUT Arg1:T2 Arg2:T1	
+R2	MISC Arg1:T4 Arg2:T5	

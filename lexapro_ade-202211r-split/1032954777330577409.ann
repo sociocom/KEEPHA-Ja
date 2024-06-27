@@ -1,0 +1,19 @@
+T1	TIME 0 3	昨日も
+T2	DISORDER 3 6	副作用
+T3	OPINION 7 10	やられ
+T4	TIME 11 14	今日も
+T5	DISORDER 22 26	フラフラ
+T6	OPINION 37 44	(´；Д；`)
+T7	DRUG 45 50	レクサプロ
+T8	DRUG 54 58	抗うつ剤
+T9	DISORDER 60 63	副作用
+A1	Temporality T1 point
+A2	Sentiment T3 negative
+A3	Temporality T4 point
+A4	Sentiment T6 negative
+R1	HAS_TIME Arg1:T2 Arg2:T1	
+R2	HAS_TIME Arg1:T2 Arg2:T4	
+R3	CAUSED Arg1:T2 Arg2:T5	
+R4	IS_OPINION_ABOUT Arg1:T3 Arg2:T2	
+R5	IS_OPINION_ABOUT Arg1:T6 Arg2:T2	
+R6	CAUSED Arg1:T7 Arg2:T2	

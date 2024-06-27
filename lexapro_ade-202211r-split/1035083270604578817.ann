@@ -1,0 +1,11 @@
+T1	DRUG 0 9	レクサプロ10mg
+T2	DISORDER 10 13	副作用
+T3	OPINION 16 19	やばい
+T4	TIME 25 29	土曜まで
+T5	ROUTE 32 34	飲む
+T6	DRUG 38 42	抗うつ剤
+T7	DISORDER 59 63	自殺念慮
+T8	DISORDER 64 68	自殺企図
+T9	URL 117 140	https://t.co/MLhSj968Ea
+A1	Sentiment T3 negative
+A2	Temporality T4 duration

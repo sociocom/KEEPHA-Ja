@@ -1,0 +1,23 @@
+T1	TIME 0 2	今日
+T2	DRUG 2 7	レクサプロ
+T3	MEASURE 7 9	半分
+T4	MEASURE 11 14	2/3
+T5	CHANGE_TRIGGER 15 17	した
+T6	DISORDER 24 32	とっても熱っぽく
+T7	DISORDER 42 45	副作用
+T8	DRUG 52 54	ルボ
+T9	DRUG 55 57	パキ
+T10	DISORDER 58 62	熱っぽさ
+T11	DISORDER 63 66	副作用
+T12	TIME 81 83	明日
+A1	Temporality T1 point
+A2	Drug_Changes T2 increase
+A3	Negation T10 negated
+A4	Negation T11 negated
+A5	Temporality T12 point
+R1	HAS_TIME Arg1:T2 Arg2:T1	
+R2	HAS_DOSAGE Arg1:T2 Arg2:T3	
+R3	HAS_DOSAGE Arg1:T2 Arg2:T4	
+R4	CAUSED Arg1:T2 Arg2:T6	
+R5	SIGNALS_CHANGE_OF Arg1:T5 Arg2:T2	
+R6	CAUSED Arg1:T7 Arg2:T6	

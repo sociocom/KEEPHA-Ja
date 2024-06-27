@@ -1,0 +1,8 @@
+T1	USER 0 5	ファミさん
+T2	DRUG 43 48	レクサプロ
+T3	ROUTE 48 52	飲んでも
+T4	USER 52 55	楓さん
+T5	USER 95 101	おおつきさん
+T6	DISORDER 117 120	吐けば
+T7	OPINION 120 127	楽になりマシタ
+A1	Sentiment T7 positive

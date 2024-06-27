@@ -1,0 +1,8 @@
+T1	USER 0 9	@ore_haji
+T2	DRUG 10 15	レクサプロ
+T3	ROUTE 15 18	飲んで
+T4	OPINION 20 31	調子良くなってきました
+T5	DISORDER 35 38	副作用
+A1	Sentiment T4 positive
+A2	Negation T5 negated
+R1	HAS_ROUTE Arg1:T2 Arg2:T3	

@@ -1,0 +1,16 @@
+T1	USER 3 13	@_dayzroox
+T2	TIME 15 22	約１ヶ月ぶりの
+T3	OTHER 22 24	診察
+T4	DRUG 32 33	薬
+T5	OPINION 34 39	効いてる方
+T6	DISORDER 42 45	副作用
+T7	TIME 51 54	１ヶ月
+T8	MEASURE 54 61	最低量18mg
+T9	DRUG 67 72	レクサプロ
+T10	TIME 85 88	今回は
+T11	DRUG 88 92	アマージ
+A1	Sentiment T5 positive
+A2	Temporality T7 duration
+A3	Temporality T10 None
+R1	HAS_DOSAGE Arg1:T4 Arg2:T8	
+R2	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	

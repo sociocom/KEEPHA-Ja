@@ -1,0 +1,16 @@
+T1	DRUG 0 5	アモキサン
+T2	DRUG 6 11	レクサプロ
+T3	OPINION 11 15	効いてる
+T4	FUNCTION 19 22	気持ち
+T5	OPINION 23 30	少し楽になった
+T6	FUNCTION 32 34	意欲
+T7	FUNCTION 36 38	食欲
+T8	OPINION 46 59	そう簡単に治るものじゃない
+A1	Sentiment T3 positive
+A2	Sentiment T5 positive
+A3	Negation T6 negated
+A4	Negation T7 negated
+A5	Sentiment T8 neutral
+R1	IS_OPINION_ABOUT Arg1:T3 Arg2:T1	
+R2	IS_OPINION_ABOUT Arg1:T3 Arg2:T2	
+R3	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	

@@ -1,0 +1,14 @@
+T1	USER 3 17	@azusa_chaaaan
+T2	TIME 39 44	3日前から
+T3	DISORDER 46 49	吐き気
+T4	OPINION 70 80	このままだと死にます
+T5	FUNCTION 82 86	食べたり
+T6	FUNCTION 86 90	飲んだり
+T7	DISORDER 93 96	吐き気
+T8	FUNCTION 105 107	寝る
+T9	DISORDER 112 114	下痢
+T10	DRUG 128 133	レクサプロ
+A1	Temporality T2 time
+A2	Sentiment T4 negative
+A3	Negation T9 negated
+R1	HAS_TIME Arg1:T3 Arg2:T2	

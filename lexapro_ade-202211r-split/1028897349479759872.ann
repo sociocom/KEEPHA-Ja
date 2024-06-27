@@ -1,0 +1,22 @@
+T1	DRUG 0 5	レクサプロ
+T2	DISORDER 6 9	吐き気
+T3	DISORDER 10 13	副作用
+T4	OPINION 17 23	出したくない
+T5	DRUG 29 34	セロクエル
+T6	CHANGE_TRIGGER 35 40	かえられた
+T7	DISORDER 42 44	太る
+T8	OPINION 50 52	嫌や
+T9	TIME 57 64	１ヶ月くらいで
+T10	OPINION 72 75	大丈夫
+A1	Drug_Changes T1 stopped
+A2	Sentiment T4 negative
+A3	Drug_Changes T5 started
+A4	Sentiment T8 negative
+A5	Temporality T9 duration
+A6	Sentiment T10 positive
+R1	CAUSED Arg1:T1 Arg2:T3	
+R2	CAUSED Arg1:T3 Arg2:T2	
+R3	MISC Arg1:T4 Arg2:T1	
+R4	SIGNALS_CHANGE_OF Arg1:T6 Arg2:T5	
+R5	SIGNALS_CHANGE_OF Arg1:T6 Arg2:T1	
+R6	IS_OPINION_ABOUT Arg1:T8 Arg2:T5	

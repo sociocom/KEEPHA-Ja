@@ -1,0 +1,11 @@
+T1	TIME 0 3	昼間の
+T2	DRUG 3 8	レクサプロ
+T3	DISORDER 9 12	副作用
+T4	OPINION 12 15	ひどく
+T5	DISORDER 19 24	気持ち悪い
+A1	Temporality T1 point
+A2	Sentiment T4 negative
+R1	CAUSED Arg1:T2 Arg2:T3	
+R2	HAS_TIME Arg1:T2 Arg2:T1	
+R3	REFERS_TO Arg1:T3 Arg2:T5	
+R4	IS_OPINION_ABOUT Arg1:T4 Arg2:T3	

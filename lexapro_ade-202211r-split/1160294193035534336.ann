@@ -1,0 +1,18 @@
+T1	TIME 2 5	今日も
+T2	DISORDER 5 8	眠れず
+T3	DRUG 9 13	ドリエル
+T4	ROUTE 13 15	飲む
+T5	TIME 19 22	2時間
+T6	DISORDER 29 32	不眠症
+T7	DRUG 44 49	レクサプロ
+T8	DISORDER 50 53	副作用
+T9	OPINION 61 63	困る
+T10	DRUG 64 69	マイスリー
+T11	TIME 84 86	6時
+A1	Temporality T1 point
+A2	Temporality T5 duration
+A3	Sentiment T9 negative
+A4	Temporality T11 time
+R1	HAS_TIME Arg1:T2 Arg2:T1	
+R2	HAS_ROUTE Arg1:T3 Arg2:T4	
+R3	TREATMENT_FOR Arg1:T3 Arg2:T2	

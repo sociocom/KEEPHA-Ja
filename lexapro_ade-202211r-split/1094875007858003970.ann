@@ -1,0 +1,6 @@
+T1	DRUG 0 5	レクサプロ
+T2	DRUG 6 18	マイナートランキライザー
+T3	DISORDER 19 21	眠気
+T4	FUNCTION 24 26	仮眠
+R1	CAUSED Arg1:T1 Arg2:T3	
+R2	CAUSED Arg1:T2 Arg2:T3	

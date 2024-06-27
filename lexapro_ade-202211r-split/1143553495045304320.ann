@@ -1,0 +1,16 @@
+T1	DRUG 0 5	レクサプロ
+T2	ROUTE 5 8	飲んで
+T3	DISORDER 8 11	吐き気
+T4	OPINION 11 18	やばかったから
+T5	OPINION 18 24	もう飲まない
+T6	TIME 32 35	2週間
+T7	OPINION 37 41	無理無理
+A1	Sentiment T4 negative
+A2	Sentiment T5 negative
+A3	Temporality T6 duration
+A4	Sentiment T7 negative
+R1	HAS_ROUTE Arg1:T1 Arg2:T2	
+R2	CAUSED Arg1:T1 Arg2:T3	
+R3	IS_OPINION_ABOUT Arg1:T4 Arg2:T3	
+R4	IS_OPINION_ABOUT Arg1:T5 Arg2:T1	
+R5	IS_OPINION_ABOUT Arg1:T7 Arg2:T1	

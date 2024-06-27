@@ -1,0 +1,22 @@
+T1	FUNCTION 0 6	お腹すいてる
+T2	DISORDER 7 11	食べ過ぎ
+T3	OPINION 12 16	良くない
+T4	DRUG 18 23	レクサプロ
+T5	CHANGE_TRIGGER 23 28	飲み始める
+T6	OPINION 31 33	普通
+T7	FUNCTION 34 36	食欲
+T8	TIME 46 50	今までの
+T9	DISORDER 75 77	過食
+T10	TIME 90 94	つい最近
+T11	TIME 101 103	今は
+T12	FUNCTION 103 105	食欲
+A1	Sentiment T3 negative
+A2	Drug_Changes T4 started
+A3	Sentiment T6 neutral
+A4	Temporality T8 None
+A5	Temporality T10 point
+A6	Temporality T11 point
+R1	IS_OPINION_ABOUT Arg1:T3 Arg2:T2	
+R2	SIGNALS_CHANGE_OF Arg1:T5 Arg2:T4	
+R3	IS_OPINION_ABOUT Arg1:T6 Arg2:T7	
+R4	REFERS_TO Arg1:T9 Arg2:T2	

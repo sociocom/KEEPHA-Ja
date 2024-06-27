@@ -1,0 +1,20 @@
+T1	TIME 0 3	昨日も
+T2	TIME 3 4	夜
+T3	FUNCTION 4 7	寝てて
+T4	DRUG 7 12	精神安定剤
+T5	CHANGE_TRIGGER 12 17	飲むの忘れ
+T6	OPINION 20 26	なんともない
+T7	DRUG 28 33	レクサプロ
+T8	DRUG 34 39	アビリット
+T9	DRUG 47 52	アビリット
+T10	DISORDER 58 61	副作用
+T11	DISORDER 62 67	太ってきた
+A1	Temporality T1 point
+A2	Temporality T2 duration
+A3	Drug_Changes T4 decrease
+A4	Sentiment T6 positive
+R1	MISC Arg1:T3 Arg2:T2	
+R2	HAS_TIME Arg1:T4 Arg2:T1	
+R3	SIGNALS_CHANGE_OF Arg1:T5 Arg2:T4	
+R4	CAUSED Arg1:T9 Arg2:T10	
+R5	REFERS_TO Arg1:T10 Arg2:T11	

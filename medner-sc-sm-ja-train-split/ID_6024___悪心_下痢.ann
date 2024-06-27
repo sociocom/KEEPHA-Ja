@@ -1,0 +1,9 @@
+T1	DRUG 14 20	シスプラチン
+T2	DRUG 21 28	カルボプラチン
+T3	TIME 32 35	週1で
+T4	DISORDER 42 45	吐き気
+T5	DISORDER 52 54	下痢
+T6	DISORDER 61 64	副作用
+T7	DOCTOR 70 75	薬剤師さん
+A1	Temporality T3 frequency
+R1	HAS_TIME Arg1:T1 Arg2:T3	

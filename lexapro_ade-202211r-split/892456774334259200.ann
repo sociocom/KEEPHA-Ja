@@ -1,0 +1,17 @@
+T1	USER 0 13	@mie_mie_dayo
+T2	DRUG 17 22	レクサプロ
+T3	DRUG 23 27	パキシル
+T4	CHANGE_TRIGGER 28 31	なった
+T5	DISORDER 37 39	眠気
+T6	DISORDER 42 45	副作用
+T7	OPINION 46 53	強かったのかな
+T8	DRUG 58 63	レクサプロ
+T9	ROUTE 63 69	飲んでるけど
+T10	DISORDER 69 73	結構眠い
+T11	DRUG 75 80	レクサプロ
+T12	CHANGE_TRIGGER 81 83	増量
+A1	Drug_Changes T2 stopped
+A2	Drug_Changes T3 started
+A3	Sentiment T7 negative
+R1	HAS_ROUTE Arg1:T8 Arg2:T9	
+R2	CAUSED Arg1:T8 Arg2:T10	

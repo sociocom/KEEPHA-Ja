@@ -1,0 +1,10 @@
+T1	DISORDER 0 6	潰瘍性大腸炎
+T2	DRUG 12 17	メサラジン
+T3	DRUG 18 29	サラゾスルファピリジン
+T4	DRUG 32 36	抗炎症薬
+T5	TIME 48 54	1週間ごとの
+T6	TIME 67 73	2か月ごとに
+T7	DISORDER 73 75	再発
+T8	OTHER 87 89	手術
+A1	Temporality T5 frequency
+A2	Temporality T6 frequency

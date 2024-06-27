@@ -1,0 +1,19 @@
+T1	DRUG 0 3	睡眠薬
+T2	DRUG 4 10	ブロチゾラム
+T3	ROUTE 11 15	飲んでも
+T4	DRUG 16 21	レクサプロ
+T5	DISORDER 22 25	副作用
+T6	OPINION 26 29	強くて
+T7	TIME 30 37	1時間くらいは
+T8	DISORDER 37 41	眠れない
+T9	OPINION 41 42	😢
+A1	Sentiment T6 negative
+A2	Temporality T7 duration
+A3	Sentiment T9 negative
+R1	REFERS_TO Arg1:T1 Arg2:T2	
+R2	HAS_ROUTE Arg1:T2 Arg2:T3	
+R3	CAUSED Arg1:T4 Arg2:T5	
+R4	REFERS_TO Arg1:T5 Arg2:T8	
+R5	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	
+R6	HAS_TIME Arg1:T8 Arg2:T7	
+R7	IS_OPINION_ABOUT Arg1:T9 Arg2:T8	

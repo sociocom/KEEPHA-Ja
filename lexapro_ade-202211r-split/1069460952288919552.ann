@@ -1,0 +1,10 @@
+T1	USER 0 13	@KenkenRuirui
+T2	DRUG 14 19	レクサプロ
+T3	ROUTE 19 21	飲む
+T4	FUNCTION 22 24	食欲
+T5	TIME 30 33	前より
+T6	FUNCTION 33 36	食べる
+T7	DISORDER 43 45	太る
+T8	DISORDER 56 60	太らない
+A1	Temporality T5 point
+A2	Negation T8 negated

@@ -1,0 +1,42 @@
+T1	DRUG 0 5	レクサプロ
+T2	CHANGE_TRIGGER 5 7	断薬
+T3	TIME 7 12	220日目
+T4	DRUG 13 18	半夏厚朴湯
+T5	TIME 18 22	17日目
+T6	FUNCTION 24 28	起きたら
+T7	ANATOMY 28 30	身体
+T8	DISORDER 30 33	だるい
+T9	TIME 34 36	連日
+T10	DISORDER 47 51	めまい感
+T11	DISORDER 51 54	吐き気
+T12	OPINION 56 67	(ง`0´)ง ｼｬｯ
+T13	TIME 69 72	昨日は
+T14	TIME 72 75	昼間に
+T15	DISORDER 75 79	少し動悸
+T16	DRUG 82 87	レキソタン
+T17	MEASURE 87 90	1mg
+T18	ROUTE 90 92	飲み
+T19	DRUG 95 97	漢方
+T20	TIME 97 100	2週間
+T21	OPINION 101 111	体調少し安定してきた
+T22	URL 117 140	https://t.co/CY2qnKoSou
+A1	Drug_Changes T1 stopped
+A2	Temporality T9 frequency
+A3	Negation T10 negated
+A4	Negation T11 negated
+A5	Sentiment T12 positive
+A6	Temporality T13 point
+A7	Temporality T14 duration
+A8	Temporality T20 duration
+A9	Sentiment T21 positive
+R1	HAS_TIME Arg1:T1 Arg2:T3	
+R2	SIGNALS_CHANGE_OF Arg1:T2 Arg2:T1	
+R3	HAS_TIME Arg1:T4 Arg2:T5	
+R4	EXPERIENCED_IN Arg1:T8 Arg2:T7	
+R5	HAS_TIME Arg1:T15 Arg2:T14	
+R6	HAS_TIME Arg1:T15 Arg2:T13	
+R7	TREATMENT_FOR Arg1:T16 Arg2:T15	
+R8	HAS_DOSAGE Arg1:T16 Arg2:T17	
+R9	HAS_ROUTE Arg1:T16 Arg2:T18	
+R10	REFERS_TO Arg1:T19 Arg2:T4	
+R11	HAS_TIME Arg1:T19 Arg2:T20	

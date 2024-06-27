@@ -1,0 +1,12 @@
+T1	DRUG 0 5	レクサプロ
+T2	DISORDER 12 15	副作用
+T3	OPINION 20 27	バランスがよい
+T4	DRUG 27 31	抗うつ剤
+T5	ANATOMY 45 47	胃腸
+T6	DISORDER 48 51	副作用
+T7	OPINION 53 60	相性があります
+T8	OPINION 62 67	注意が必要
+T9	URL 71 94	https://t.co/EebmFQs2zE
+A1	Sentiment T3 positive
+A2	Sentiment T7 neutral
+A3	Sentiment T8 negative

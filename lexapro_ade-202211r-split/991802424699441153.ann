@@ -1,0 +1,13 @@
+T1	DISORDER 0 3	不眠症
+T2	DISORDER 4 7	副作用
+T3	URL 8 31	https://t.co/Z52lz24Y8W
+T4	DISORDER 34 41	自律神経失調症
+T5	DISORDER 44 50	パニック障害
+T6	DISORDER 53 58	双極性障害
+T7	DRUG 68 71	デパス
+T8	DRUG 74 80	メイラックス
+T9	DRUG 82 87	レクサプロ
+T10	DRUG 89 93	セパゾン
+T11	DRUG 95 101	サインバルタ
+T12	DISORDER 103 106	副作用
+T13	URL 116 139	https://t.co/x8IMbm9jeX

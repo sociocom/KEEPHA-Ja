@@ -1,0 +1,11 @@
+T1	USER 0 13	@utsumen_msnr
+T2	DRUG 40 46	リフレックス
+T3	DRUG 49 54	レクサプロ
+T4	CHANGE_TRIGGER 55 58	変えて
+T5	DISORDER 59 63	ふらつき
+T6	DISORDER 88 91	副作用
+A1	Drug_Changes T2 stopped
+A2	Drug_Changes T3 started
+R1	CAUSED Arg1:T2 Arg2:T5	
+R2	SIGNALS_CHANGE_OF Arg1:T4 Arg2:T2	
+R3	SIGNALS_CHANGE_OF Arg1:T4 Arg2:T3	

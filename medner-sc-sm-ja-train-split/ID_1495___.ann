@@ -1,0 +1,8 @@
+T1	DRUG 0 6	シスプラチン
+T2	DISORDER 7 10	副作用
+T3	DISORDER 11 22	高音域が聞き取りにくく
+T4	FUNCTION 27 29	聴力
+T5	DISORDER 50 53	耳鳴り
+T6	DISORDER 54 61	低音障害型難聴
+T7	OTHER 69 73	お薬手帳
+A1	Negation T4 negated

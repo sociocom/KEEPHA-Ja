@@ -1,0 +1,19 @@
+T1	TIME 0 4	今日から
+T2	DRUG 4 10	メトホルミン
+T3	CHANGE_TRIGGER 11 13	中止
+T4	FUNCTION 20 23	b1c
+T5	MEASURE 24 28	7.3%
+T6	DISORDER 28 31	低血糖
+T7	OPINION 32 41	おこしてる気がする
+T8	OPINION 43 51	体重も減ってない
+T9	OPINION 52 65	どうしたらいいか分からない
+T10	FUNCTION 67 70	怖くて
+A1	Drug_Changes T2 stopped
+A2	Sentiment T7 negative
+A3	Sentiment T8 negative
+A4	Sentiment T9 negative
+R1	HAS_TIME Arg1:T2 Arg2:T1	
+R2	CAUSED Arg1:T2 Arg2:T6	
+R3	SIGNALS_CHANGE_OF Arg1:T3 Arg2:T2	
+R4	HAS_RESULT Arg1:T4 Arg2:T5	
+R5	IS_OPINION_ABOUT Arg1:T7 Arg2:T6	

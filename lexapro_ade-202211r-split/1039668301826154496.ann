@@ -1,0 +1,8 @@
+T1	USER 0 16	@rin_oh1082_more
+T2	TIME 17 19	昨日
+T3	CHANGE_TRIGGER 19 21	追加
+T4	DRUG 24 29	レクサプロ
+T5	DRUG 39 44	吐き気止め
+A1	Temporality T2 point
+R1	SIGNALS_CHANGE_OF Arg1:T3 Arg2:T4	
+R2	HAS_TIME Arg1:T4 Arg2:T2	

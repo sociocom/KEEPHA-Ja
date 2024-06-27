@@ -1,0 +1,6 @@
+T1	DRUG 37 43	シスプラチン
+T2	DISORDER 44 47	副作用
+T3	TIME 80 81	今
+T4	DISORDER 90 93	吐き気
+T5	DISORDER 95 98	倦怠感
+A1	Temporality T3 point

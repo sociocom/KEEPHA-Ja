@@ -1,0 +1,12 @@
+T1	DRUG 0 4	抗うつ剤
+T2	DRUG 4 9	レクサプロ
+T3	TIME 10 11	夜
+T4	MEASURE 11 15	1.5錠
+T5	MEASURE 15 19	15mg
+T6	DISORDER 24 26	眠気
+A1	Temporality T3 frequency
+A2	Negation T6 negated
+R1	REFERS_TO Arg1:T1 Arg2:T2	
+R2	HAS_TIME Arg1:T2 Arg2:T3	
+R3	HAS_DOSAGE Arg1:T2 Arg2:T4	
+R4	HAS_DOSAGE Arg1:T2 Arg2:T5	

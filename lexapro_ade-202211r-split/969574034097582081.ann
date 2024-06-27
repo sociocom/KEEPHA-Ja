@@ -1,0 +1,23 @@
+T1	DRUG 0 5	レクサプロ
+T2	TIME 5 9	11日目
+T3	TIME 10 14	昨日今日
+T4	TIME 15 20	久しぶりに
+T5	DISORDER 27 30	耳鳴り
+T6	TIME 34 37	昼間の
+T7	DISORDER 37 39	眠気
+T8	OPINION 40 50	かなりなくなってきた
+T9	TIME 58 59	朝
+T10	FUNCTION 59 63	起きたら
+T11	TIME 63 69	10時間とか
+T12	DISORDER 69 74	寝てるけど
+A1	Temporality T3 point
+A2	Temporality T6 duration
+A3	Sentiment T8 positive
+A4	Temporality T11 duration
+R1	HAS_TIME Arg1:T1 Arg2:T2	
+R2	HAS_TIME Arg1:T5 Arg2:T3	
+R3	HAS_TIME Arg1:T5 Arg2:T4	
+R4	HAS_TIME Arg1:T7 Arg2:T6	
+R5	IS_OPINION_ABOUT Arg1:T8 Arg2:T7	
+R6	MISC Arg1:T10 Arg2:T9	
+R7	HAS_TIME Arg1:T12 Arg2:T11	

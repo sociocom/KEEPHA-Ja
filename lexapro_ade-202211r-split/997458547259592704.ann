@@ -1,0 +1,20 @@
+T1	USER 0 12	@yasasiiyori
+T2	USER 13 17	よりさん
+T3	OPINION 24 35	体調は相変わらずです😰
+T4	DRUG 36 37	薬
+T5	DRUG 38 43	レクサプロ
+T6	CHANGE_TRIGGER 44 47	変わり
+T7	DISORDER 47 49	眠気
+T8	OPINION 49 54	倍増です😭
+T9	TIME 77 80	今日は
+T10	TIME 98 99	今
+T11	DISORDER 99 106	落ち込みモード
+A1	Sentiment T3 negative
+A2	Drug_Changes T5 started
+A3	Sentiment T8 negative
+A4	Temporality T9 point
+A5	Temporality T10 point
+R1	CAUSED Arg1:T5 Arg2:T7	
+R2	SIGNALS_CHANGE_OF Arg1:T6 Arg2:T5	
+R3	IS_OPINION_ABOUT Arg1:T8 Arg2:T7	
+R4	HAS_TIME Arg1:T11 Arg2:T10	

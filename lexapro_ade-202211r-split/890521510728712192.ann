@@ -1,0 +1,26 @@
+T1	DRUG 1 6	レクサプロ
+T2	DRUG 7 11	抗うつ剤
+T3	CHANGE_TRIGGER 13 15	使用
+T4	TIME 17 20	一週間
+T5	URL 25 48	https://t.co/r3tKjSetua
+T6	DRUG 50 55	レクサプロ
+T7	DISORDER 59 62	副作用
+T8	FUNCTION 63 67	精神状態
+T9	TIME 69 73	一週間の
+T10	DRUG 89 93	抗うつ剤
+T11	OPINION 98 106	抵抗がありました
+T12	OTHER 108 110	安酒
+T13	OPINION 120 124	建設的な
+T14	FUNCTION 124 128	精神状態
+A1	Drug_Changes T1 started
+A2	Temporality T4 duration
+A3	Temporality T9 duration
+A4	Sentiment T11 negative
+A5	Sentiment T13 positive
+R1	HAS_TIME Arg1:T1 Arg2:T4	
+R2	REFERS_TO Arg1:T2 Arg2:T1	
+R3	SIGNALS_CHANGE_OF Arg1:T3 Arg2:T1	
+R4	CAUSED Arg1:T6 Arg2:T7	
+R5	CAUSED Arg1:T10 Arg2:T14	
+R6	IS_OPINION_ABOUT Arg1:T11 Arg2:T10	
+R7	IS_OPINION_ABOUT Arg1:T13 Arg2:T14	

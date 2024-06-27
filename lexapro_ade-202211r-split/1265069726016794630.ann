@@ -1,0 +1,10 @@
+T1	DISORDER 2 6	食欲不振
+T2	OPINION 12 19	更に酷くなって
+T3	DRUG 28 33	レクサプロ
+T4	CHANGE_TRIGGER 33 35	断念
+T5	URL 40 71	https://t.co/DwgyQzeXjU #r_blog
+A1	Sentiment T2 negative
+A2	Drug_Changes T3 stopped
+R1	IS_OPINION_ABOUT Arg1:T2 Arg2:T1	
+R2	CAUSED Arg1:T3 Arg2:T1	
+R3	SIGNALS_CHANGE_OF Arg1:T4 Arg2:T3	

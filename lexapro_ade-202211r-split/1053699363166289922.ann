@@ -1,0 +1,13 @@
+T1	DRUG 0 5	レクサプロ
+T2	DISORDER 7 11	性欲減退
+T3	DISORDER 12 15	副作用
+T4	TIME 24 26	最近
+T5	TIME 37 40	今まで
+T6	TIME 40 44	1日1回
+T7	TIME 49 58	2～3日に1回まで
+A1	Temporality T4 point
+A2	Temporality T5 duration
+A3	Temporality T6 frequency
+A4	Temporality T7 frequency
+R1	CAUSED Arg1:T1 Arg2:T3	
+R2	REFERS_TO Arg1:T3 Arg2:T2	

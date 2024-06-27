@@ -1,0 +1,15 @@
+T1	USER 3 11	@sonmasa
+T2	USER 13 28	@democracymonst
+T3	DISORDER 39 44	双極性障害
+T4	DRUG 48 55	バルプロ酸Na
+T5	DISORDER 63 66	副作用
+T6	DISORDER 67 70	脳萎縮
+T7	DRUG 77 85	抗不安薬レスタス
+T8	DRUG 88 91	デパス
+T9	TIME 91 94	頓服を
+T10	DRUG 106 108	麻薬
+T11	DRUG 109 111	劇薬
+T12	DRUG 122 124	劇薬
+T13	DRUG 125 130	レクサプロ
+T14	DRUG 131 136	エチゾラム
+A1	Temporality T9 frequency

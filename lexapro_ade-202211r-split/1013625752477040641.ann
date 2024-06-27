@@ -1,0 +1,10 @@
+T1	USER 0 7	@m_ltsu
+T2	DRUG 8 13	レクサプロ
+T3	DISORDER 25 28	副作用
+T4	OPINION 33 37	よかった
+T5	OPINION 68 80	ちょっと疲れちゃたんだね
+T6	OPINION 88 96	元気なら良かった
+A1	Negation T3 negated
+A2	Sentiment T4 positive
+A3	Sentiment T5 negative
+A4	Sentiment T6 positive

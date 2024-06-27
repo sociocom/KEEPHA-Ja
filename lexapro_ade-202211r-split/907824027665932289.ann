@@ -1,0 +1,4 @@
+T1	DRUG 15 20	レクサプロ
+T2	DISORDER 21 24	副作用
+T3	URL 43 66	https://t.co/KM2aO14GiH
+R1	CAUSED Arg1:T1 Arg2:T2	

@@ -1,0 +1,29 @@
+T1	TIME 0 1	夜
+T2	DRUG 7 12	レクサプロ
+T3	MEASURE 12 16	10mg
+T4	ROUTE 17 19	飲む
+T5	TIME 21 23	最近
+T6	DISORDER 26 28	眠気
+T7	DRUG 36 37	薬
+T8	OPINION 52 65	少しは良くなってきてるのか
+T9	TIME 70 76	一年前よりは
+T10	OPINION 76 85	だいぶ良くなってる
+T11	OPINION 88 90	ヨシ
+T12	DISORDER 97 101	不安障害
+T13	DRUG 103 108	レキソタン
+T14	DRUG 111 116	レクサプロ
+A1	Temporality T1 frequency
+A2	Temporality T5 point
+A3	Sentiment T8 neutral
+A4	Temporality T9 point
+A5	Sentiment T10 positive
+A6	Sentiment T11 positive
+R1	HAS_TIME Arg1:T2 Arg2:T1	
+R2	HAS_DOSAGE Arg1:T2 Arg2:T3	
+R3	HAS_ROUTE Arg1:T2 Arg2:T4	
+R4	HAS_TIME Arg1:T6 Arg2:T5	
+R5	CAUSED Arg1:T7 Arg2:T6	
+R6	REFERS_TO Arg1:T7 Arg2:T13	
+R7	REFERS_TO Arg1:T7 Arg2:T14	
+R8	IS_OPINION_ABOUT Arg1:T8 Arg2:T12	
+R9	IS_OPINION_ABOUT Arg1:T10 Arg2:T12	

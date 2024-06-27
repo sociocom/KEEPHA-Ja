@@ -1,0 +1,21 @@
+T1	USER 2 5	ディミ
+T2	DISORDER 8 12	うつ状態
+T3	OTHER 13 15	診断
+T4	DRUG 19 24	レクサプロ
+T5	MEASURE 24 26	半錠
+T6	DRUG 37 38	薬
+T7	TIME 46 48	1日
+T8	DISORDER 57 59	異常
+T9	OPINION 69 74	大丈夫かな
+T10	DISORDER 81 84	副作用
+T11	FUNCTION 86 88	不安
+T12	TIME 100 103	今日は
+A1	Temporality T7 duration
+A2	Negation T8 negated
+A3	Sentiment T9 positive
+A4	Temporality T12 point
+R1	MISC Arg1:T3 Arg2:T2	
+R2	HAS_DOSAGE Arg1:T4 Arg2:T5	
+R3	TREATMENT_FOR Arg1:T4 Arg2:T2	
+R4	HAS_TIME Arg1:T4 Arg2:T7	
+R5	REFERS_TO Arg1:T6 Arg2:T4	

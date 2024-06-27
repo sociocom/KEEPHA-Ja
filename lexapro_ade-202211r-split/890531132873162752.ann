@@ -1,0 +1,14 @@
+T1	USER 0 16	@ByebyeDependenc
+T2	USER 17 21	あどさん
+T3	DRUG 27 32	レクサプロ
+T4	DISORDER 33 36	副作用
+T5	DISORDER 36 40	辛かった
+T6	OPINION 47 56	落ち着いて来られた
+T7	DRUG 70 75	レクサプロ
+T8	OPINION 76 79	おかげ
+T9	OPINION 80 87	なんとかなって
+T10	URL 117 140	https://t.co/9aaYTAFrJ2
+A1	Sentiment T6 positive
+A2	Sentiment T8 positive
+A3	Sentiment T9 positive
+R1	IS_OPINION_ABOUT Arg1:T8 Arg2:T7	

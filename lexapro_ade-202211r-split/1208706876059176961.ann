@@ -1,0 +1,13 @@
+T1	TIME 0 3	年末に
+T2	DISORDER 19 25	車乗るの怖い
+T3	DRUG 28 30	頓服
+T4	TIME 36 38	夏に
+T5	TIME 38 42	十年ぶり
+T6	DRUG 59 64	レクサプロ
+T7	DISORDER 65 68	副作用
+T8	DISORDER 69 78	おかしなテンション
+A1	Temporality T1 None
+A2	Temporality T4 None
+R1	CAUSED Arg1:T6 Arg2:T7	
+R2	REFERS_TO Arg1:T7 Arg2:T8	
+R3	HAS_TIME Arg1:T8 Arg2:T4	

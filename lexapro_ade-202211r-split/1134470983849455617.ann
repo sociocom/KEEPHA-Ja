@@ -1,0 +1,26 @@
+T1	TIME 4 8	16日目
+T2	DISORDER 9 12	水様便
+T3	TIME 15 17	2日
+T4	FUNCTION 23 26	嬉しい
+T5	DISORDER 30 32	ガス
+T6	FUNCTION 36 39	悲しい
+T7	TIME 41 44	今日は
+T8	FUNCTION 44 46	眠気
+T9	OPINION 47 52	すごかった
+T10	TIME 53 59	何時間に１回
+T11	CHANGE_TRIGGER 59 64	飲み始めた
+T12	OPINION 70 80	精神的なリラックス感
+T13	OPINION 82 91	弱ほろ酔い的な感覚
+T14	DRUG 98 103	レクサプロ
+T15	URL 117 140	https://t.co/x8fvKv6t1H
+A1	Negation T2 negated
+A2	Temporality T3 duration
+A3	Temporality T7 point
+A4	Sentiment T9 positive
+A5	Temporality T10 frequency
+A6	Sentiment T12 positive
+A7	Sentiment T13 positive
+A8	Drug_Changes T14 started
+R1	MISC Arg1:T8 Arg2:T7	
+R2	IS_OPINION_ABOUT Arg1:T9 Arg2:T8	
+R3	SIGNALS_CHANGE_OF Arg1:T11 Arg2:T14	

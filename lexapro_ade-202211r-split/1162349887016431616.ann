@@ -1,0 +1,9 @@
+T1	TIME 3 5	土日
+T2	OPINION 10 15	恐怖心満々
+T3	DRUG 18 23	レクサプロ
+T4	OPINION 24 34	飲む事に抵抗でてきた
+T5	MEASURE 39 41	1錠
+T6	DISORDER 53 56	吐き気
+A1	Temporality T1 time
+A2	Sentiment T2 negative
+A3	Sentiment T4 negative

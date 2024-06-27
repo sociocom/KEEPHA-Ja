@@ -1,0 +1,20 @@
+T1	USER 0 11	@srskmm1028
+T2	DRUG 12 17	ベルソムラ
+T3	DRUG 18 23	レクサプロ
+T4	DISORDER 24 27	副作用
+T5	OPINION 28 31	少ない
+T6	DOCTOR 40 42	先生
+T7	OPINION 56 69	効果は緩やかというイメージ
+T8	DRUG 79 84	ロラゼパム
+T9	DRUG 85 92	アルプラゾラム
+T10	TIME 93 95	短期
+T11	DRUG 100 113	ベンゾジアゼピン系抗不安薬
+T12	URL 117 140	https://t.co/4QDzCu2rt2
+A1	Sentiment T5 positive
+A2	Sentiment T7 neutral
+A3	Temporality T10 duration
+R1	CAUSED Arg1:T2 Arg2:T4	
+R2	CAUSED Arg1:T3 Arg2:T4	
+R3	MISC Arg1:T5 Arg2:T4	
+R4	IS_OPINION_ABOUT Arg1:T7 Arg2:T2	
+R5	IS_OPINION_ABOUT Arg1:T7 Arg2:T3	

@@ -1,0 +1,38 @@
+T1	DRUG 0 5	レクサプロ
+T2	CHANGE_TRIGGER 5 10	飲み始めて
+T3	TIME 10 13	今日で
+T4	TIME 13 17	４８日目
+T5	MEASURE 18 22	１０mg
+T6	TIME 23 27	２２日目
+T7	TIME 28 30	夜中
+T8	TIME 47 50	７時間
+T9	FUNCTION 50 53	眠れた
+T10	TIME 56 57	朝
+T11	FUNCTION 57 60	起きる
+T12	OPINION 62 66	辛かった
+T13	FUNCTION 67 69	食欲
+T14	FUNCTION 73 76	お通じ
+T15	OPINION 77 81	オッケー
+T16	DRUG 82 87	レクサプロ
+T17	OPINION 88 93	効き出して
+T18	FUNCTION 106 109	食べて
+T19	DISORDER 110 119	眠くならなくなった
+T20	OPINION 120 123	不思議
+A1	Drug_Changes T1 started
+A2	Temporality T3 point
+A3	Temporality T7 duration
+A4	Temporality T8 duration
+A5	Sentiment T12 negative
+A6	Sentiment T15 positive
+A7	Sentiment T17 positive
+A8	Negation T19 negated
+A9	Sentiment T20 neutral
+R1	HAS_TIME Arg1:T1 Arg2:T4	
+R2	HAS_DOSAGE Arg1:T1 Arg2:T5	
+R3	HAS_TIME Arg1:T1 Arg2:T6	
+R4	SIGNALS_CHANGE_OF Arg1:T2 Arg2:T1	
+R5	MISC Arg1:T9 Arg2:T8	
+R6	MISC Arg1:T11 Arg2:T10	
+R7	IS_OPINION_ABOUT Arg1:T12 Arg2:T11	
+R8	IS_OPINION_ABOUT Arg1:T15 Arg2:T14	
+R9	IS_OPINION_ABOUT Arg1:T17 Arg2:T16	

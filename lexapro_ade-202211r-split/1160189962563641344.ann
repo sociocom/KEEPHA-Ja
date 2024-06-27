@@ -1,0 +1,14 @@
+T1	DRUG 3 8	レクサプロ
+T2	ROUTE 8 11	飲んだ
+T3	OPINION 14 22	どうなるだろうか
+T4	OPINION 29 44	すぐにどうにかなるとは思わない
+T5	DISORDER 51 54	副作用
+T6	DRUG 84 90	リフレックス
+T7	ROUTE 90 92	飲む
+T8	OPINION 94 97	安パイ
+A1	Sentiment T3 neutral
+A2	Sentiment T4 neutral
+A3	Sentiment T8 positive
+R1	HAS_ROUTE Arg1:T1 Arg2:T2	
+R2	IS_OPINION_ABOUT Arg1:T3 Arg2:T1	
+R3	IS_OPINION_ABOUT Arg1:T4 Arg2:T1	

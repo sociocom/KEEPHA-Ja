@@ -1,0 +1,3 @@
+T1	DRUG 0 5	レクサプロ
+T2	DISORDER 6 9	副作用
+R1	CAUSED Arg1:T1 Arg2:T2	

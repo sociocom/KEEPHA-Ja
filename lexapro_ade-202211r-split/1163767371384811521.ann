@@ -1,0 +1,9 @@
+T1	USER 0 16	@8NJ1u8Ft1chwxkm
+T2	DRUG 43 48	レクサプロ
+T3	DOCTOR 59 61	医師
+T4	DRUG 63 64	薬
+T5	TIME 73 76	数週間
+T6	DISORDER 82 85	副作用
+T7	DISORDER 88 92	胃もたれ
+T8	URL 117 140	https://t.co/sVwK3HIOTQ
+A1	Temporality T5 duration

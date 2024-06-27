@@ -1,0 +1,12 @@
+T1	DRUG 0 5	レクサプロ
+T2	CHANGE_TRIGGER 5 10	飲み始めて
+T3	FUNCTION 12 14	食欲
+T4	OPINION 23 25	困る
+T5	DISORDER 26 31	食い過ぎる
+A1	Drug_Changes T1 started
+A2	Negation T3 negated
+A3	Sentiment T4 negative
+R1	CAUSED Arg1:T1 Arg2:T3	
+R2	SIGNALS_CHANGE_OF Arg1:T2 Arg2:T1	
+R3	MISC Arg1:T3 Arg2:T5	
+R4	IS_OPINION_ABOUT Arg1:T4 Arg2:T3	

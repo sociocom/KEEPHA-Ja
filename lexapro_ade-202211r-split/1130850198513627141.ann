@@ -1,0 +1,5 @@
+T1	FUNCTION 3 5	眠気
+T2	DRUG 9 17	レクサプロちゃん
+T3	ROUTE 17 20	飲んで
+T4	FUNCTION 20 27	おやすみちゃん
+R1	HAS_ROUTE Arg1:T2 Arg2:T3	

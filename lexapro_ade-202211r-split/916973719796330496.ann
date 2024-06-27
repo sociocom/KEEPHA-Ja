@@ -1,0 +1,14 @@
+T1	DRUG 0 5	レクサプロ
+T2	DRUG 6 8	胃薬
+T3	ROUTE 8 11	飲んだ
+T4	OPINION 13 15	地獄
+T5	DISORDER 16 19	副作用
+T6	TIME 19 24	4時間祭り
+T7	DRUG 45 46	薬
+T8	TIME 47 50	今から
+T9	DISORDER 59 61	つら
+A1	Sentiment T4 negative
+A2	Temporality T6 duration
+R1	HAS_ROUTE Arg1:T1 Arg2:T3	
+R2	HAS_ROUTE Arg1:T2 Arg2:T3	
+R3	IS_OPINION_ABOUT Arg1:T4 Arg2:T5	

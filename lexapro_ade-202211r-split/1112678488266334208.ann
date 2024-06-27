@@ -1,0 +1,13 @@
+T1	DRUG 5 10	レクサプロ
+T2	DISORDER 11 16	性機能障害
+T3	DISORDER 17 21	性欲低下
+T4	DISORDER 22 26	勃起不全
+T5	DRUG 33 38	レクサプロ
+T6	DISORDER 39 42	副作用
+T7	DISORDER 63 68	性機能障害
+T8	OPINION 85 95	4割ほどで認められる
+T9	FUNCTION 106 108	性欲
+T10	OPINION 117 122	(◞‸◟)
+A1	Sentiment T8 neutral
+A2	Negation T9 negated
+A3	Sentiment T10 negative

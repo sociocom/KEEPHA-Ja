@@ -1,0 +1,10 @@
+T1	TIME 22 24	今は
+T2	DRUG 24 29	メサラジン
+T3	TIME 29 33	1週間で
+T4	OPINION 33 35	安定
+T5	DISORDER 49 51	痛み
+A1	Temporality T1 point
+A2	Temporality T3 duration
+A3	Sentiment T4 positive
+R1	HAS_TIME Arg1:T2 Arg2:T1	
+R2	HAS_TIME Arg1:T2 Arg2:T3	

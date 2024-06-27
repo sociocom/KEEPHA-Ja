@@ -1,0 +1,13 @@
+T1	TIME 0 4	毎日毎日
+T2	DOCTOR 5 7	医師
+T3	DRUG 8 12	パキシル
+T4	DISORDER 13 16	副作用
+T5	OPINION 17 22	大変だった
+T6	DRUG 25 30	レクサプロ
+T7	DISORDER 53 56	つらい
+T8	FUNCTION 57 59	機嫌
+T9	FUNCTION 73 77	考えても
+A1	Temporality T1 frequency
+A2	Sentiment T5 negative
+R1	CAUSED Arg1:T3 Arg2:T4	
+R2	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	

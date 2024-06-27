@@ -1,0 +1,10 @@
+T1	OPINION 3 8	すごい元気
+T2	DRUG 16 21	レクサプロ
+T3	MEASURE 27 29	半錠
+T4	ROUTE 29 32	のんだ
+T5	TIME 41 47	日目くらいに
+T6	DISORDER 47 50	副作用
+A1	Sentiment T1 positive
+A2	Temporality T5 duration
+R1	HAS_DOSAGE Arg1:T2 Arg2:T3	
+R2	HAS_ROUTE Arg1:T2 Arg2:T4	

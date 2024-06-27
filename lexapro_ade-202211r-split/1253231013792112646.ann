@@ -1,0 +1,22 @@
+T1	USER 0 13	@katajikenai1
+T2	DRUG 14 19	レクサプロ
+T3	DISORDER 26 29	吐き気
+T4	TIME 30 35	2週間ほど
+T5	TIME 54 57	一時期
+T6	MEASURE 57 61	0.5錠
+T7	CHANGE_TRIGGER 63 65	減薬
+T8	DISORDER 71 74	依存性
+T9	OPINION 75 78	少ない
+T10	OPINION 98 107	合う合わないがある
+A1	Drug_Changes T2 decrease
+A2	Temporality T4 duration
+A3	Temporality T5 point
+A4	Sentiment T9 positive
+A5	Sentiment T10 neutral
+R1	HAS_DOSAGE Arg1:T2 Arg2:T6	
+R2	HAS_TIME Arg1:T2 Arg2:T5	
+R3	CAUSED Arg1:T2 Arg2:T8	
+R4	CAUSED Arg1:T2 Arg2:T3	
+R5	HAS_TIME Arg1:T3 Arg2:T4	
+R6	SIGNALS_CHANGE_OF Arg1:T7 Arg2:T2	
+R7	IS_OPINION_ABOUT Arg1:T9 Arg2:T8	

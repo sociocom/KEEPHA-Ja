@@ -1,0 +1,13 @@
+T1	USER 0 16	@mei_mei_totoro_
+T2	FUNCTION 20 22	気分
+T3	OPINION 23 27	落ち込む
+T4	FUNCTION 28 30	食欲
+T5	OPINION 31 38	あまりなくなる
+T6	DRUG 43 48	レクサプロ
+T7	OPINION 49 54	落ち着いて
+T8	FUNCTION 54 57	食べて
+A1	Sentiment T3 negative
+A2	Sentiment T5 negative
+A3	Sentiment T7 positive
+R1	IS_OPINION_ABOUT Arg1:T3 Arg2:T2	
+R2	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	

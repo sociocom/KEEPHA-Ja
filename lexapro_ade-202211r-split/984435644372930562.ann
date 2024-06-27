@@ -1,0 +1,40 @@
+T1	DRUG 0 5	レクサプロ
+T2	DRUG 7 13	リフレックス
+T3	CHANGE_TRIGGER 14 16	変薬
+T4	DRUG 17 22	レクサプロ
+T5	TIME 23 26	4ヶ月
+T6	ROUTE 26 29	飲んで
+T7	TIME 30 32	当初
+T8	DISORDER 35 37	不安
+T9	DISORDER 38 41	焦燥感
+T10	DISORDER 42 44	憂鬱
+T11	DISORDER 45 47	自責
+T12	DISORDER 56 60	意欲低下
+T13	OPINION 61 68	改善しなかった
+T14	DRUG 74 79	レクサプロ
+T15	CHANGE_TRIGGER 80 84	飲み始め
+T16	TIME 84 88	2週間は
+T17	DISORDER 88 91	副作用
+T18	DISORDER 92 95	苦しみ
+T19	TIME 101 104	3週間
+A1	Drug_Changes T1 stopped
+A2	Drug_Changes T2 started
+A3	Temporality T5 duration
+A4	Negation T8 negated
+A5	Negation T9 negated
+A6	Negation T10 negated
+A7	Negation T11 negated
+A8	Sentiment T13 negative
+A9	Drug_Changes T14 started
+A10	Temporality T16 duration
+A11	Temporality T19 duration
+R1	SIGNALS_CHANGE_OF Arg1:T3 Arg2:T2	
+R2	SIGNALS_CHANGE_OF Arg1:T3 Arg2:T1	
+R3	HAS_TIME Arg1:T4 Arg2:T5	
+R4	HAS_ROUTE Arg1:T4 Arg2:T6	
+R5	TREATMENT_FOR Arg1:T4 Arg2:T12	
+R6	IS_OPINION_ABOUT Arg1:T13 Arg2:T12	
+R7	CAUSED Arg1:T14 Arg2:T17	
+R8	SIGNALS_CHANGE_OF Arg1:T15 Arg2:T14	
+R9	HAS_TIME Arg1:T17 Arg2:T16	
+R10	CAUSED Arg1:T17 Arg2:T18	

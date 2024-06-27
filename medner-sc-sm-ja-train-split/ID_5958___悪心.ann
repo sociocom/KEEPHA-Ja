@@ -1,0 +1,12 @@
+T1	DRUG 14 20	シスプラチン
+T2	TIME 21 23	4回
+T3	ROUTE 23 25	打ち
+T4	DISORDER 30 33	吐き気
+T5	OPINION 34 36	酷い
+T6	DRUG 39 40	薬
+A1	Temporality T2 frequency
+A2	Sentiment T5 negative
+R1	HAS_TIME Arg1:T1 Arg2:T2	
+R2	HAS_ROUTE Arg1:T1 Arg2:T3	
+R3	CAUSED Arg1:T1 Arg2:T4	
+R4	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	

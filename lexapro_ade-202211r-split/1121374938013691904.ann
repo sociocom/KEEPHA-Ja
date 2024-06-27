@@ -1,0 +1,13 @@
+T1	USER 0 12	@maemuki1000
+T2	DOCTOR 13 16	専門医
+T3	DRUG 19 23	パキシル
+T4	ROUTE 24 27	飲んで
+T5	DISORDER 29 32	副作用
+T6	OPINION 35 44	割りと具合よかった
+T7	TIME 61 62	前
+T8	DRUG 70 74	レクサプ
+T9	OPINION 76 83	本当に酷かった
+A1	Negation T5 negated
+A2	Sentiment T6 positive
+A3	Temporality T7 None
+A4	Sentiment T9 negative

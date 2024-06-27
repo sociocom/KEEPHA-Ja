@@ -1,0 +1,20 @@
+T1	TIME 0 5	はじめての
+T2	DRUG 5 7	お薬
+T3	DRUG 8 13	レクサプロ
+T4	TIME 15 16	朝
+T5	FUNCTION 16 20	起きたら
+T6	DISORDER 20 26	猛烈な吐き気
+T7	DISORDER 27 31	熱っぽさ
+T8	ANATOMY 42 43	手
+T9	DISORDER 44 47	震える
+T10	TIME 51 54	後から
+T11	OPINION 76 85	どこかで野垂れ死ぬ
+A1	Temporality T1 frequency
+A2	Drug_Changes T2 started
+A3	Temporality T10 None
+A4	Sentiment T11 negative
+R1	REFERS_TO Arg1:T2 Arg2:T3	
+R2	HAS_TIME Arg1:T2 Arg2:T1	
+R3	HAS_TIME Arg1:T6 Arg2:T4	
+R4	HAS_TIME Arg1:T7 Arg2:T4	
+R5	EXPERIENCED_IN Arg1:T9 Arg2:T8	

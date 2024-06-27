@@ -1,0 +1,22 @@
+T1	DRUG 0 5	アモキサン
+T2	DRUG 7 11	SSRI
+T3	DRUG 13 18	レクサプロ
+T4	DRUG 19 25	リフレックス
+T5	DRUG 27 34	ジェイゾロフト
+T6	DRUG 35 41	サインバルタ
+T7	DRUG 42 48	イフェクサー
+T8	DISORDER 54 61	きっつい副作用
+T9	DRUG 65 78	メジャートランキーライザー
+T10	ROUTE 80 84	飲んだら
+T11	DISORDER 88 91	副作用
+T12	OPINION 92 100	死んでしまいそう
+T13	OPINION 101 108	怖くて飲めない
+A1	Sentiment T12 negative
+A2	Sentiment T13 negative
+R1	CAUSED Arg1:T1 Arg2:T8	
+R2	REFERS_TO Arg1:T2 Arg2:T3	
+R3	REFERS_TO Arg1:T2 Arg2:T4	
+R4	REFERS_TO Arg1:T2 Arg2:T5	
+R5	REFERS_TO Arg1:T2 Arg2:T6	
+R6	REFERS_TO Arg1:T2 Arg2:T7	
+R7	CAUSED Arg1:T2 Arg2:T8	

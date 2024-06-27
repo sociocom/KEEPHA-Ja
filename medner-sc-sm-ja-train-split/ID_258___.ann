@@ -1,0 +1,11 @@
+T1	DRUG 0 7	アザチオプリン
+T2	DRUG 8 12	イムラン
+T3	DISORDER 16 19	副作用
+T4	DISORDER 20 22	発疹
+T5	DISORDER 23 26	皮膚炎
+T6	DRUG 26 32	ステロイド剤
+T7	DISORDER 34 41	消化管粘膜障害
+T8	DISORDER 42 47	消化器症状
+T9	DISORDER 77 78	瘡
+T10	OPINION 89 98	あまりお勧めしない
+A1	Sentiment T10 negative

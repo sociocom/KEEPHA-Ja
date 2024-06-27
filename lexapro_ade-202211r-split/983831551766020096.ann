@@ -1,0 +1,20 @@
+T1	USER 0 13	@sulayweeeman
+T2	TIME 28 30	今の
+T3	DRUG 30 34	ゾロフト
+T4	OPINION 35 44	あんまり効いてない
+T5	ROUTE 47 51	飲んでも
+T6	DISORDER 57 59	眠気
+T7	TIME 69 71	前に
+T8	DRUG 71 76	レクサプロ
+T9	OPINION 86 90	効いてる
+T10	DRUG 98 103	レクサプロ
+T11	FUNCTION 110 112	妊娠
+A1	Temporality T2 point
+A2	Sentiment T4 negative
+A3	Sentiment T9 positive
+R1	HAS_TIME Arg1:T3 Arg2:T2	
+R2	HAS_ROUTE Arg1:T3 Arg2:T5	
+R3	CAUSED Arg1:T3 Arg2:T6	
+R4	IS_OPINION_ABOUT Arg1:T4 Arg2:T3	
+R5	HAS_TIME Arg1:T8 Arg2:T7	
+R6	IS_OPINION_ABOUT Arg1:T9 Arg2:T8	

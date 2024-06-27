@@ -1,0 +1,20 @@
+T1	DISORDER 0 5	身体的症状
+T2	OPINION 6 8	強い
+T3	DISORDER 9 13	仮面うつ
+T4	OPINION 13 36	(´°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥｀)
+T5	DISORDER 38 41	副作用
+T6	OPINION 41 45	強いから
+T7	DRUG 46 51	レクサプロ
+T8	ROUTE 64 66	飲み
+T9	DISORDER 107 109	辛い
+T10	OPINION 109 132	(´°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥｀)
+A1	Sentiment T2 negative
+A2	Sentiment T4 negative
+A3	Sentiment T6 negative
+A4	Sentiment T10 negative
+R1	IS_OPINION_ABOUT Arg1:T2 Arg2:T1	
+R2	CAUSED Arg1:T3 Arg2:T1	
+R3	IS_OPINION_ABOUT Arg1:T4 Arg2:T3	
+R4	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	
+R5	CAUSED Arg1:T7 Arg2:T5	
+R6	TREATMENT_FOR Arg1:T7 Arg2:T3	

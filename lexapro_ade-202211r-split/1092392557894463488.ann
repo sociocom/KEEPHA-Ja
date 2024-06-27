@@ -1,0 +1,23 @@
+T1	USER 0 7	@nfc_gm
+T2	DRUG 13 18	レクサプロ
+T3	ROUTE 22 25	飲んだ
+T4	DRUG 34 35	薬
+T5	DISORDER 37 39	太り
+T6	OPINION 42 43	😭
+T7	DISORDER 76 79	副作用
+T8	OPINION 88 92	良かった
+T9	MEASURE 96 98	半錠
+T10	OPINION 102 104	安心
+T11	TIME 113 118	初っ端から
+T12	MEASURE 118 120	1錠
+T13	TIME 122 126	翌週には
+T14	MEASURE 126 128	2錠
+A1	Sentiment T6 negative
+A2	Negation T7 negated
+A3	Sentiment T8 positive
+A4	Sentiment T10 positive
+A5	Temporality T13 point
+R1	HAS_ROUTE Arg1:T2 Arg2:T3	
+R2	CAUSED Arg1:T4 Arg2:T5	
+R3	HAS_ROUTE Arg1:T4 Arg2:T3	
+R4	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	

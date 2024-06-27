@@ -1,0 +1,9 @@
+T1	DRUG 0 7	アザチオプリン
+T2	ROUTE 8 10	飲む
+T3	DISORDER 12 15	副作用
+T4	DISORDER 16 21	白血球減少
+T5	DISORDER 22 24	脱毛
+T6	TIME 46 48	今は
+T7	DISORDER 48 50	紫斑
+A1	Temporality T6 point
+A2	Negation T7 negated

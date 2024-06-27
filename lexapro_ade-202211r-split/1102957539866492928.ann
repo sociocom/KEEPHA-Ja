@@ -1,0 +1,12 @@
+T1	USER 0 13	@r_r_nemu_aka
+T2	DRUG 14 16	漢方
+T3	DRUG 18 23	加味逍遙散
+T4	DRUG 31 36	レクサプロ
+T5	DRUG 43 44	薬
+T6	FUNCTION 56 62	ちょっと怖い
+T7	DISORDER 71 74	副作用
+T8	DISORDER 74 79	辛かったら
+T9	OPINION 79 91	無理して飲まなくてもいい
+T10	DRUG 100 102	漢方
+T11	URL 117 140	https://t.co/UZIXb6T1RN
+A1	Sentiment T9 neutral

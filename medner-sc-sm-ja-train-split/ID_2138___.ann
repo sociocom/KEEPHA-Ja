@@ -1,0 +1,7 @@
+T1	DRUG 0 7	アザチオプリン
+T2	DRUG 8 16	メルカプトプリン
+T3	DRUG 18 24	受容体拮抗薬
+T4	DISORDER 25 31	視神経脊髄炎
+T5	DISORDER 32 38	多発性硬化症
+T6	DISORDER 39 43	C-19
+T7	DRUG 52 54	薬剤

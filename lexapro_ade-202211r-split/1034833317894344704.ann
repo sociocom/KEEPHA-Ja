@@ -1,0 +1,9 @@
+T1	TIME 0 2	夜に
+T2	DRUG 2 7	レクサプロ
+T3	OPINION 8 20	やめた方がよかったかなぁ
+T4	DISORDER 24 27	副作用
+A1	Temporality T1 duration
+A2	Sentiment T3 negative
+R1	HAS_TIME Arg1:T2 Arg2:T1	
+R2	CAUSED Arg1:T2 Arg2:T4	
+R3	IS_OPINION_ABOUT Arg1:T3 Arg2:T2	

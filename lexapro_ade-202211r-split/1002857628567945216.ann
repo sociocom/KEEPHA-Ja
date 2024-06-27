@@ -1,0 +1,6 @@
+T1	DISORDER 0 2	頭痛
+T2	DRUG 3 8	レクサプロ
+T3	DISORDER 9 12	副作用
+T4	URL 19 42	https://t.co/smhowQc9N6
+R1	CAUSED Arg1:T2 Arg2:T3	
+R2	REFERS_TO Arg1:T3 Arg2:T1	

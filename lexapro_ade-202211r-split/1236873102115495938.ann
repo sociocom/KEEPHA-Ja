@@ -1,0 +1,18 @@
+T1	DRUG 3 8	レクサプロ
+T2	DISORDER 9 12	副作用
+T3	DISORDER 40 45	立ちくらみ
+T4	DISORDER 47 54	起立性調節障害
+T5	TIME 63 66	昼まで
+T6	DISORDER 66 72	起きられない
+T7	DRUG 74 80	エビリファイ
+T8	DISORDER 81 84	副作用
+T9	ANATOMY 98 101	おへそ
+T10	DISORDER 105 108	痛がる
+T11	TIME 111 114	何度か
+A1	Temporality T5 duration
+A2	Negation T8 negated
+A3	Temporality T11 frequency
+R1	CAUSED Arg1:T4 Arg2:T3	
+R2	HAS_TIME Arg1:T6 Arg2:T5	
+R3	EXPERIENCED_IN Arg1:T10 Arg2:T9	
+R4	HAS_TIME Arg1:T10 Arg2:T11	

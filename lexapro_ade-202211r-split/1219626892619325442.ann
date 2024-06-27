@@ -1,0 +1,9 @@
+T1	USER 0 16	@ER9xireP92YMbdk
+T2	TIME 17 19	以前
+T3	DRUG 19 24	レクサプロ
+T4	ROUTE 24 27	飲んで
+T5	DISORDER 34 37	副作用
+A1	Temporality T2 point
+A2	Negation T5 negated
+R1	HAS_TIME Arg1:T3 Arg2:T2	
+R2	HAS_ROUTE Arg1:T3 Arg2:T4	

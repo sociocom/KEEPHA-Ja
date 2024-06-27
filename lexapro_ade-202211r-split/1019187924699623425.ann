@@ -1,0 +1,6 @@
+T1	DRUG 0 5	ストラテラ
+T2	CHANGE_TRIGGER 5 7	中止
+T3	DRUG 15 20	レクサプロ
+T4	DISORDER 29 32	吐き気
+A1	Drug_Changes T1 stopped
+R1	SIGNALS_CHANGE_OF Arg1:T2 Arg2:T1	

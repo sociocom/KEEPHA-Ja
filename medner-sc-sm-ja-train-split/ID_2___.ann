@@ -1,0 +1,7 @@
+T1	DRUG 0 7	メサラジン錠剤
+T2	DISORDER 8 14	潰瘍性大腸炎
+T3	DRUG 15 18	治療薬
+T4	DRUG 28 29	薬
+T5	DRUG 33 42	ジェネリック医薬品
+T6	DISORDER 43 46	副作用
+T7	FUNCTION 51 53	不安

@@ -1,0 +1,13 @@
+T1	DRUG 0 5	レクサプロ
+T2	CHANGE_TRIGGER 5 10	飲みだして
+T3	DISORDER 10 12	眠気
+T4	DISORDER 13 16	副作用
+T5	OPINION 24 34	効果あるってことかな
+T6	OPINION 35 55	日本人の何割かには体質的に効かないらしい
+A1	Drug_Changes T1 started
+A2	Sentiment T5 positive
+A3	Sentiment T6 negative
+R1	CAUSED Arg1:T1 Arg2:T4	
+R2	SIGNALS_CHANGE_OF Arg1:T2 Arg2:T1	
+R3	CAUSED Arg1:T4 Arg2:T3	
+R4	IS_OPINION_ABOUT Arg1:T5 Arg2:T1	

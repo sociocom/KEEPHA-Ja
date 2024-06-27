@@ -1,0 +1,9 @@
+T1	DRUG 0 7	アザチオプリン
+T2	DISORDER 8 11	副作用
+T3	DISORDER 12 15	白内障
+T4	DISORDER 16 19	緑内障
+T5	DISORDER 20 23	高血圧
+T6	DRUG 29 32	治療薬
+T7	DRUG 36 46	プロトンポンプ阻害薬
+T8	OPINION 70 77	慎重投与が必要
+A1	Sentiment T8 neutral

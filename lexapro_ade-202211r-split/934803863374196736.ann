@@ -1,0 +1,7 @@
+T1	DRUG 0 5	レクサプロ
+T2	ROUTE 5 9	飲んでる
+T3	DISORDER 11 14	副作用
+T4	OPINION 20 31	良くなってる気がしない
+A1	Sentiment T4 negative
+R1	CAUSED Arg1:T1 Arg2:T3	
+R2	HAS_ROUTE Arg1:T1 Arg2:T2	

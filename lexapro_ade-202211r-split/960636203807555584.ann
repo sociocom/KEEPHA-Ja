@@ -1,0 +1,12 @@
+T1	USER 0 16	@Bluestar_catcat
+T2	DRUG 19 24	レクサプロ
+T3	DISORDER 34 43	副作用らしい副作用
+T4	DISORDER 66 68	症状
+T5	FUNCTION 69 72	気持ち
+T6	OPINION 73 80	落ち着きました
+A1	Negation T3 negated
+A2	Sentiment T6 positive
+R1	TREATMENT_FOR Arg1:T2 Arg2:T4	
+R2	TREATMENT_FOR Arg1:T2 Arg2:T5	
+R3	IS_OPINION_ABOUT Arg1:T6 Arg2:T4	
+R4	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	

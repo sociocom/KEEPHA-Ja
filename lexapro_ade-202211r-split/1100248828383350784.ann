@@ -1,0 +1,18 @@
+T1	DRUG 0 5	レクサプロ
+T2	DRUG 6 12	ソラナックス
+T3	DRUG 28 29	薬
+T4	TIME 32 34	日中
+T5	DISORDER 35 37	眠気
+T6	TIME 53 57	いままで
+T7	DISORDER 57 63	パニック障害
+T8	FUNCTION 79 83	精神状態
+T9	OPINION 84 86	改善
+T10	URL 113 136	https://t.co/OXXDSSU7HU
+A1	Temporality T4 duration
+A2	Temporality T6 time
+A3	Sentiment T9 positive
+R1	REFERS_TO Arg1:T3 Arg2:T1	
+R2	REFERS_TO Arg1:T3 Arg2:T2	
+R3	CAUSED Arg1:T3 Arg2:T8	
+R4	TREATMENT_FOR Arg1:T3 Arg2:T7	
+R5	IS_OPINION_ABOUT Arg1:T9 Arg2:T8	

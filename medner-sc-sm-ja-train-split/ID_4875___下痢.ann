@@ -1,0 +1,12 @@
+T1	DRUG 14 21	シクロスポリン
+T2	CHANGE_TRIGGER 22 27	飲み出して
+T3	DISORDER 29 31	下痢
+T4	OPINION 32 35	酷くて
+T5	TIME 36 38	今は
+T6	DRUG 38 43	プレドニン
+A1	Drug_Changes T1 started
+A2	Sentiment T4 negative
+A3	Temporality T5 point
+R1	SIGNALS_CHANGE_OF Arg1:T2 Arg2:T1	
+R2	IS_OPINION_ABOUT Arg1:T4 Arg2:T3	
+R3	CAUSED Arg1:T6 Arg2:T3	

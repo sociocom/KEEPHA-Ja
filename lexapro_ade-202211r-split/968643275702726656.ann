@@ -1,0 +1,10 @@
+T1	DRUG 12 17	レクサプロ
+T2	DISORDER 19 22	オナラ
+T3	DISORDER 69 72	副作用
+T4	OPINION 76 81	恥ずかしい
+T5	OPINION 108 115	少し恥ずかしい
+A1	Sentiment T4 negative
+A2	Sentiment T5 negative
+R1	CAUSED Arg1:T1 Arg2:T2	
+R2	REFERS_TO Arg1:T3 Arg2:T2	
+R3	IS_OPINION_ABOUT Arg1:T5 Arg2:T3	

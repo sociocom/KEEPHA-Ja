@@ -1,0 +1,5 @@
+T1	DRUG 0 5	レクサプロ
+T2	DISORDER 11 14	副作用
+T3	OPINION 19 22	一安心
+A1	Negation T2 negated
+A2	Sentiment T3 positive

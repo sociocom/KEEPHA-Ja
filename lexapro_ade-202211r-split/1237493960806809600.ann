@@ -1,0 +1,9 @@
+T1	USER 0 12	@kerina_chan
+T2	DRUG 13 18	プラシーボ
+T3	DRUG 37 42	レクサプロ
+T4	OPINION 43 49	ホンマに良い
+T5	DISORDER 56 59	副作用
+T6	OPINION 64 74	辞める時も辞めやすい
+A1	Sentiment T4 positive
+A2	Negation T5 negated
+A3	Sentiment T6 positive

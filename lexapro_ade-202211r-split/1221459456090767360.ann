@@ -1,0 +1,8 @@
+T1	TIME 0 3	土日は
+T2	DRUG 3 8	レクサプロ
+T3	DISORDER 9 12	副作用
+T4	TIME 18 21	来週は
+A1	Temporality T1 None
+A2	Temporality T4 point
+R1	CAUSED Arg1:T2 Arg2:T3	
+R2	HAS_TIME Arg1:T2 Arg2:T1	

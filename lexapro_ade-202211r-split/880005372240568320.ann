@@ -1,0 +1,7 @@
+T1	FUNCTION 5 7	食欲
+T2	DRUG 12 17	レクサプロ
+T3	DISORDER 18 21	副作用
+T4	DISORDER 25 31	お腹空かない
+A1	Negation T1 negated
+R1	CAUSED Arg1:T2 Arg2:T3	
+R2	REFERS_TO Arg1:T3 Arg2:T4	

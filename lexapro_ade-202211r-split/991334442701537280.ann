@@ -1,0 +1,16 @@
+T1	DRUG 0 4	パキシル
+T2	DISORDER 5 8	副作用
+T3	DISORDER 11 15	イラつき
+T4	FUNCTION 16 19	やる気
+T5	FUNCTION 27 30	覚えた
+T6	TIME 36 39	今でも
+T7	DRUG 80 84	ゾロフト
+T8	OPINION 85 90	多分合って
+T9	DRUG 92 97	ルボックス
+T10	ROUTE 103 105	飲む
+T11	DRUG 110 115	レクサプロ
+T12	URL 117 140	https://t.co/v0F6WG79al
+A1	Temporality T6 point
+A2	Sentiment T8 positive
+R1	CAUSED Arg1:T1 Arg2:T2	
+R2	IS_OPINION_ABOUT Arg1:T8 Arg2:T7	

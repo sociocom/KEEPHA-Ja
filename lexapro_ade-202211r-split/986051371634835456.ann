@@ -1,0 +1,14 @@
+T1	DRUG 0 5	コンサータ
+T2	DISORDER 6 9	吐き気
+T3	FUNCTION 14 16	血圧
+T4	OPINION 17 20	落とす
+T5	DRUG 24 29	レクサプロ
+T6	DRUG 30 34	リチウム
+T7	DRUG 35 39	アモバン
+T8	DRUG 40 45	サイレース
+T9	ANATOMY 48 50	神経
+T10	TIME 51 52	今
+A1	Sentiment T4 negative
+A2	Temporality T10 point
+R1	CAUSED Arg1:T1 Arg2:T2	
+R2	IS_OPINION_ABOUT Arg1:T4 Arg2:T3	

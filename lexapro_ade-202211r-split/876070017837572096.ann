@@ -1,0 +1,18 @@
+T1	DRUG 0 5	レクサプロ
+T2	CHANGE_TRIGGER 5 10	飲み始めて
+T3	TIME 10 13	2週間
+T4	DISORDER 20 23	副作用
+T5	DISORDER 24 27	吐き気
+T6	OPINION 28 36	ほとんど無くなり
+T7	FUNCTION 37 39	気分
+T8	OPINION 40 42	安定
+A1	Drug_Changes T1 started
+A2	Temporality T3 duration
+A3	Sentiment T6 positive
+A4	Sentiment T8 positive
+R1	CAUSED Arg1:T1 Arg2:T4	
+R2	HAS_TIME Arg1:T1 Arg2:T3	
+R3	SIGNALS_CHANGE_OF Arg1:T2 Arg2:T1	
+R4	REFERS_TO Arg1:T4 Arg2:T5	
+R5	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	
+R6	IS_OPINION_ABOUT Arg1:T8 Arg2:T7	

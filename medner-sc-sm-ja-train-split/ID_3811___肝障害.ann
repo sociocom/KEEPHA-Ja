@@ -1,0 +1,12 @@
+T1	DRUG 14 21	アザチオプリン
+T2	DISORDER 38 47	ステロイド性肝障害
+T3	TEST 57 61	血液検査
+T4	DISORDER 63 67	炎症反応
+T5	OPINION 68 74	上がっていた
+T6	DISORDER 79 83	脱毛症状
+T7	DISORDER 84 86	発熱
+A1	Sentiment T5 negative
+A2	Negation T6 negated
+A3	Negation T7 negated
+R1	HAS_RESULT Arg1:T3 Arg2:T4	
+R2	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	

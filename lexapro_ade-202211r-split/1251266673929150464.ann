@@ -1,0 +1,11 @@
+T1	DRUG 0 5	レクサプロ
+T2	DISORDER 6 9	副作用
+T3	TIME 10 12	朝に
+T4	OPINION 15 24	ほぼ感じなくなって
+T5	TIME 29 32	今夜も
+T6	ROUTE 36 41	飲まないと
+A1	Sentiment T4 positive
+A2	Temporality T5 None
+R1	CAUSED Arg1:T1 Arg2:T2	
+R2	HAS_TIME Arg1:T2 Arg2:T3	
+R3	IS_OPINION_ABOUT Arg1:T4 Arg2:T2	

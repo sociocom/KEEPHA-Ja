@@ -1,0 +1,13 @@
+T1	USER 0 13	@potapotadrop
+T2	DRUG 60 65	レクサプロ
+T3	CHANGE_TRIGGER 65 70	飲み始めた
+T4	TIME 72 75	2週間
+T5	DISORDER 75 78	吐き気
+T6	OPINION 79 82	すごく
+A1	Drug_Changes T2 started
+A2	Temporality T4 duration
+A3	Sentiment T6 negative
+R1	CAUSED Arg1:T2 Arg2:T5	
+R2	SIGNALS_CHANGE_OF Arg1:T3 Arg2:T2	
+R3	HAS_TIME Arg1:T5 Arg2:T4	
+R4	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	

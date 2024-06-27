@@ -1,0 +1,21 @@
+T1	TIME 8 11	水曜日
+T2	TIME 14 17	一日中
+T3	FUNCTION 62 64	寝る
+T4	DRUG 72 77	レクサプロ
+T5	OPINION 78 83	落ち着いて
+T6	DISORDER 88 94	食欲なくなる
+T7	OPINION 96 98	困る
+T8	DRUG 100 105	マイスリー
+T9	OPINION 106 108	良い
+T10	OPINION 110 116	抜けがイマ…
+T11	URL 117 140	https://t.co/BoIZER8aoh
+A1	Temporality T1 time
+A2	Temporality T2 duration
+A3	Sentiment T5 positive
+A4	Sentiment T7 negative
+A5	Sentiment T9 positive
+A6	Sentiment T10 negative
+R1	CAUSED Arg1:T4 Arg2:T6	
+R2	IS_OPINION_ABOUT Arg1:T7 Arg2:T6	
+R3	IS_OPINION_ABOUT Arg1:T9 Arg2:T8	
+R4	IS_OPINION_ABOUT Arg1:T10 Arg2:T8	

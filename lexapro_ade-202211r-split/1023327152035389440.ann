@@ -1,0 +1,27 @@
+T1	USER 0 12	@ohuroyasann
+T2	DRUG 20 25	レキソタン
+T3	DRUG 26 31	レクサプロ
+T4	ROUTE 34 37	飲んで
+T5	DISORDER 42 45	副作用
+T6	DRUG 61 62	薬
+T7	OPINION 63 68	効きが悪い
+T8	OPINION 77 80	おかげ
+T9	OPINION 100 105	(´▽`)
+T10	DRUG 107 112	マイスリー
+T11	OPINION 113 120	全く体に合わず
+T12	FUNCTION 121 123	眠気
+T13	CHANGE_TRIGGER 131 136	やめました
+A1	Negation T5 negated
+A2	Sentiment T7 negative
+A3	Sentiment T8 positive
+A4	Sentiment T9 positive
+A5	Drug_Changes T10 stopped
+A6	Sentiment T11 negative
+A7	Negation T12 negated
+R1	HAS_ROUTE Arg1:T2 Arg2:T4	
+R2	HAS_ROUTE Arg1:T3 Arg2:T4	
+R3	IS_OPINION_ABOUT Arg1:T7 Arg2:T6	
+R4	IS_OPINION_ABOUT Arg1:T8 Arg2:T2	
+R5	IS_OPINION_ABOUT Arg1:T8 Arg2:T3	
+R6	IS_OPINION_ABOUT Arg1:T11 Arg2:T10	
+R7	SIGNALS_CHANGE_OF Arg1:T13 Arg2:T10	

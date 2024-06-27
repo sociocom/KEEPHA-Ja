@@ -1,0 +1,19 @@
+T1	USER 0 14	@mochi2_bochi2
+T2	DRUG 15 19	抗うつ薬
+T3	DRUG 22 28	サインバルタ
+T4	DRUG 29 34	レクサプロ
+T5	DISORDER 53 56	副作用
+T6	OPINION 56 60	キツくて
+T7	CHANGE_TRIGGER 60 67	続けられません
+T8	OPINION 96 103	個人差が大きい
+A1	Drug_Changes T3 stopped
+A2	Drug_Changes T4 stopped
+A3	Sentiment T6 negative
+A4	Sentiment T8 neutral
+R1	REFERS_TO Arg1:T2 Arg2:T3	
+R2	REFERS_TO Arg1:T2 Arg2:T4	
+R3	CAUSED Arg1:T3 Arg2:T5	
+R4	CAUSED Arg1:T4 Arg2:T5	
+R5	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	
+R6	SIGNALS_CHANGE_OF Arg1:T7 Arg2:T3	
+R7	SIGNALS_CHANGE_OF Arg1:T7 Arg2:T4	

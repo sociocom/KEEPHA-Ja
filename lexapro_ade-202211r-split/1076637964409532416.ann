@@ -1,0 +1,23 @@
+T1	DRUG 0 5	レクサプロ
+T2	MEASURE 6 9	5ミリ
+T3	MEASURE 11 15	10ミリ
+T4	CHANGE_TRIGGER 16 18	増量
+T5	TIME 20 22	初日
+T6	DISORDER 27 30	副作用
+T7	FUNCTION 33 35	睡眠
+T8	OPINION 36 45	あまり変わりません
+T9	OPINION 51 65	効果が出るまでしばらくかかる
+T10	TIME 82 86	これから
+T11	FUNCTION 90 93	お昼寝
+T12	URL 107 130	https://t.co/r5BAWaocBk
+A1	Drug_Changes T1 increase
+A2	Negation T6 negated
+A3	Sentiment T8 neutral
+A4	Sentiment T9 neutral
+A5	Temporality T10 point
+R1	HAS_DOSAGE Arg1:T1 Arg2:T3	
+R2	HAS_TIME Arg1:T1 Arg2:T5	
+R3	CAUSED Arg1:T1 Arg2:T7	
+R4	SIGNALS_CHANGE_OF Arg1:T4 Arg2:T1	
+R5	IS_OPINION_ABOUT Arg1:T8 Arg2:T7	
+R6	MISC Arg1:T9 Arg2:T1	

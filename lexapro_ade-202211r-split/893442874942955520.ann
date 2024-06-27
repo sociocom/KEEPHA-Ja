@@ -1,0 +1,16 @@
+T1	USER 0 12	@Mickey_Joye
+T2	DRUG 13 18	ルボックス
+T3	DRUG 19 23	パキシル
+T4	DRUG 24 27	デパス
+T5	ROUTE 39 42	飲んで
+T6	DRUG 44 45	薬
+T7	DRUG 76 80	SSRI
+T8	DISORDER 81 84	副作用
+T9	OPINION 84 87	少ない
+T10	CHANGE_TRIGGER 91 93	断薬
+T11	OPINION 94 101	辛いんですかね
+T12	DRUG 105 110	レクサプロ
+T13	URL 117 140	https://t.co/CFHWahpw5R
+A1	Sentiment T9 positive
+A2	Sentiment T11 neutral
+R1	HAS_ROUTE Arg1:T6 Arg2:T5	

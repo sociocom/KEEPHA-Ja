@@ -1,0 +1,13 @@
+T1	USER 0 12	@miiMAMAo3l8
+T2	DRUG 37 42	レクサプロ
+T3	DISORDER 42 45	副作用
+T4	OPINION 45 48	すごい
+T5	DISORDER 60 64	不安障害
+T6	OPINION 65 69	良さそう
+T7	OPINION 77 85	あまり抵抗なくて
+T8	OPINION 93 97	飲みたい
+T9	DOCTOR 103 106	主治医
+A1	Sentiment T4 neutral
+A2	Sentiment T6 positive
+A3	Sentiment T7 positive
+A4	Sentiment T8 positive

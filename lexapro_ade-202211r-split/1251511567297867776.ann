@@ -1,0 +1,9 @@
+T1	USER 0 9	@__yun_ta
+T2	DRUG 12 17	レクサプロ
+T3	ROUTE 17 20	飲んで
+T4	TIME 20 25	2年くらい
+T5	DISORDER 28 31	副作用
+A1	Temporality T4 duration
+A2	Negation T5 negated
+R1	HAS_ROUTE Arg1:T2 Arg2:T3	
+R2	HAS_TIME Arg1:T2 Arg2:T4	

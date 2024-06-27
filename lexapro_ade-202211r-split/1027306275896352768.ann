@@ -1,0 +1,7 @@
+T1	TIME 0 1	今
+T2	DRUG 1 6	レクサプロ
+T3	DRUG 15 21	サインバルタ
+T4	CHANGE_TRIGGER 22 25	変えて
+T5	DISORDER 36 39	副作用
+A1	Temporality T1 point
+R1	HAS_TIME Arg1:T2 Arg2:T1	

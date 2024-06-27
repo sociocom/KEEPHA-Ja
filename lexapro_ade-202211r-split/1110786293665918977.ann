@@ -1,0 +1,14 @@
+T1	DRUG 0 1	薬
+T2	DRUG 2 8	イフェクサー
+T3	DRUG 10 15	レクサプロ
+T4	CHANGE_TRIGGER 16 20	変わった
+T5	DRUG 22 28	イフェクサー
+T6	DISORDER 29 32	副作用
+T7	DRUG 39 44	レクサプロ
+T8	OPINION 46 51	どうなるか
+A1	Drug_Changes T2 stopped
+A2	Drug_Changes T3 started
+A3	Negation T6 negated
+A4	Sentiment T8 neutral
+R1	SIGNALS_CHANGE_OF Arg1:T4 Arg2:T3	
+R2	SIGNALS_CHANGE_OF Arg1:T4 Arg2:T2	

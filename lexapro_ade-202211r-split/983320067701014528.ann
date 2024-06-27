@@ -1,0 +1,15 @@
+T1	DRUG 2 3	薬
+T2	ROUTE 3 8	飲んでれば
+T3	OPINION 8 19	割と落ち着いてはきてる
+T4	DRUG 26 31	レクサプロ
+T5	MEASURE 31 33	1錠
+T6	CHANGE_TRIGGER 34 37	変えた
+T7	FUNCTION 98 100	食欲
+T8	DISORDER 119 121	飢え
+T9	FUNCTION 127 131	食べてる
+A1	Sentiment T3 positive
+A2	Drug_Changes T4 started
+A3	Negation T7 negated
+R1	HAS_ROUTE Arg1:T1 Arg2:T2	
+R2	HAS_DOSAGE Arg1:T4 Arg2:T5	
+R3	SIGNALS_CHANGE_OF Arg1:T6 Arg2:T4	

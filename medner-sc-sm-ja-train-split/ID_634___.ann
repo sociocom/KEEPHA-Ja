@@ -1,0 +1,4 @@
+T1	DRUG 0 5	アスピリン
+T2	DRUG 6 14	ロキソプロフェン
+T3	DISORDER 15 19	胃腸障害
+T4	DISORDER 20 23	副作用

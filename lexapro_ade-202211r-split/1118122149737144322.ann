@@ -1,0 +1,18 @@
+T1	DRUG 0 6	リフレックス
+T2	ROUTE 9 14	飲んでいた
+T3	DRUG 38 44	サインバルタ
+T4	TIME 45 47	一度
+T5	TIME 47 50	二週間
+T6	DISORDER 50 52;66 70	食欲 マイナス
+T7	DISORDER 50 54	食欲ゼロ
+T8	DISORDER 59 64	戻していた
+T9	DRUG 79 85	リフレックス
+T10	DRUG 86 91	レクサプロ
+A1	Temporality T4 frequency
+A2	Temporality T5 duration
+R1	HAS_ROUTE Arg1:T1 Arg2:T2	
+R2	CAUSED Arg1:T3 Arg2:T7	
+R3	CAUSED Arg1:T3 Arg2:T8	
+R4	HAS_TIME Arg1:T7 Arg2:T4	
+R5	HAS_TIME Arg1:T7 Arg2:T5	
+R6	REFERS_TO Arg1:T7 Arg2:T6	

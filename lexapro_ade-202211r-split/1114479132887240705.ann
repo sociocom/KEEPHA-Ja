@@ -1,0 +1,4 @@
+T1	DRUG 4 9	レクサプロ
+T2	TIME 21 22	今
+T3	DISORDER 32 35	副作用
+A1	Temporality T2 point

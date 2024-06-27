@@ -1,0 +1,14 @@
+T1	DRUG 0 5	レクサプロ
+T2	OPINION 6 12	きいてくれた
+T3	FUNCTION 16 18	食欲
+T4	OPINION 19 23	復活した
+T5	DRUG 39 42	合う薬
+T6	OPINION 45 49	良かった
+A1	Sentiment T2 positive
+A2	Sentiment T4 positive
+A3	Sentiment T6 positive
+R1	CAUSED Arg1:T1 Arg2:T3	
+R2	IS_OPINION_ABOUT Arg1:T2 Arg2:T1	
+R3	IS_OPINION_ABOUT Arg1:T4 Arg2:T3	
+R4	REFERS_TO Arg1:T5 Arg2:T1	
+R5	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	

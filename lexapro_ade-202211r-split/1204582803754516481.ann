@@ -1,0 +1,20 @@
+T1	DISORDER 0 5	気が滅入る
+T2	FUNCTION 6 8	食欲
+T3	OPINION 9 13	イマイチ
+T4	DRUG 14 15	薬
+T5	ROUTE 15 18	飲んで
+T6	OPINION 20 27	波があるのかな
+T7	PERSONAL_INFORMATION 41 46	デボちゃん
+T8	OPINION 54 59	まだ大丈夫
+T9	URL 80 103	https://t.co/EKhnRfIeKT
+T10	DRUG 105 110	レクサプロ
+T11	CHANGE_TRIGGER 110 115	飲み始めて
+T12	URL 117 140	https://t.co/rqWEO4Xtlv
+A1	Sentiment T3 negative
+A2	Sentiment T6 neutral
+A3	Sentiment T8 positive
+A4	Drug_Changes T10 started
+R1	IS_OPINION_ABOUT Arg1:T3 Arg2:T2	
+R2	HAS_ROUTE Arg1:T4 Arg2:T5	
+R3	REFERS_TO Arg1:T4 Arg2:T10	
+R4	SIGNALS_CHANGE_OF Arg1:T11 Arg2:T10	

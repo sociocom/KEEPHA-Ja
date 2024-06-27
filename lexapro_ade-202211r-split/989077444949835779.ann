@@ -1,0 +1,8 @@
+T1	USER 0 12	@MiyaTaku910
+T2	DRUG 29 34	レクサプロ
+T3	OPINION 40 46	1番効いてる
+T4	DISORDER 58 61	副作用
+T5	DRUG 69 73	色んな薬
+T6	DISORDER 77 80	副作用
+A1	Sentiment T3 positive
+R1	MISC Arg1:T3 Arg2:T2	

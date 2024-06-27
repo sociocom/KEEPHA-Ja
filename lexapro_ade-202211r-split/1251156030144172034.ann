@@ -1,0 +1,14 @@
+T1	USER 3 13	@cl_muginy
+T2	OTHER 15 17	青汁
+T3	OTHER 18 25	おからパウダー
+T4	DRUG 26 30	抗うつ薬
+T5	DISORDER 31 34	副作用
+T6	PERSONAL_INFORMATION 42 67	𖥧𖥣𓂃𖡼𓈒𖢔𖧧 My Hideout 𖠇𖡼𓂃𖥣𖥧ᐝ
+T7	DRUG 69 76	ジェイゾロフト
+T8	DRUG 77 82	レクサプロ
+T9	DISORDER 85 87	便秘
+T10	PERSONAL_INFORMATION 95 99	そこたん
+T11	URL 107 130	https://t.co/I56wsjZuQw
+R1	TREATMENT_FOR Arg1:T2 Arg2:T5	
+R2	TREATMENT_FOR Arg1:T3 Arg2:T5	
+R3	CAUSED Arg1:T4 Arg2:T5	

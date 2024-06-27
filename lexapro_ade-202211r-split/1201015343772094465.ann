@@ -1,0 +1,18 @@
+T1	TIME 5 10	2週間まで
+T2	TIME 10 12	今の
+T3	DRUG 32 35	デパス
+T4	OPINION 44 49	一時的効果
+T5	DRUG 52 57	レクサプロ
+T6	OPINION 58 60	期待
+T7	TIME 65 67	今は
+T8	DISORDER 67 70	吐き気
+T9	OPINION 78 92	続けても大丈夫そう🙆‍♀️👌
+A1	Temporality T1 duration
+A2	Sentiment T4 negative
+A3	Sentiment T6 positive
+A4	Temporality T7 point
+A5	Negation T8 negated
+A6	Sentiment T9 positive
+R1	IS_OPINION_ABOUT Arg1:T4 Arg2:T3	
+R2	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	
+R3	IS_OPINION_ABOUT Arg1:T9 Arg2:T5	

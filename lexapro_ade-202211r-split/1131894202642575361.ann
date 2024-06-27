@@ -1,0 +1,17 @@
+T1	TIME 1 6	月24日の
+T2	ANATOMY 14 16	背中
+T3	DISORDER 36 39	副作用
+T4	TIME 45 47	昨日
+T5	DRUG 48 53	レクサプロ
+T6	CHANGE_TRIGGER 54 60	飲まなかった
+T7	TIME 69 76	夕方くらいまで
+T8	DISORDER 76 79	副作用
+T9	DISORDER 96 100	顔面蒼白
+T10	URL 117 140	https://t.co/9pirrvkZfT
+A1	Temporality T1 date
+A2	Temporality T4 point
+A3	Drug_Changes T5 decrease
+R1	HAS_TIME Arg1:T5 Arg2:T4	
+R2	SIGNALS_CHANGE_OF Arg1:T6 Arg2:T5	
+R3	HAS_TIME Arg1:T8 Arg2:T7	
+R4	CAUSED Arg1:T8 Arg2:T9	

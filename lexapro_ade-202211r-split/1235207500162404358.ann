@@ -1,0 +1,9 @@
+T1	USER 0 16	@HossyMentalHack
+T2	OPINION 29 36	体に合わなくて
+T3	DISORDER 37 43	すごい副作用
+T4	DRUG 54 59	レクサプロ
+T5	OPINION 60 66	合わなかった
+T6	DRUG 78 79	薬
+A1	Sentiment T2 negative
+A2	Sentiment T5 negative
+R1	IS_OPINION_ABOUT Arg1:T5 Arg2:T4	

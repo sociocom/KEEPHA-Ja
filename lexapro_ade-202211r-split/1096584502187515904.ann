@@ -1,0 +1,5 @@
+T1	DRUG 0 5	レクサプロ
+T2	DRUG 6 11	吐き気止め
+T3	CHANGE_TRIGGER 12 15	減らす
+A1	Drug_Changes T2 decrease
+R1	SIGNALS_CHANGE_OF Arg1:T3 Arg2:T2	

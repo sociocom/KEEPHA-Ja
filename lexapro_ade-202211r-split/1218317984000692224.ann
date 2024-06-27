@@ -1,0 +1,23 @@
+T1	USER 0 11	@happy55314
+T2	DRUG 35 40	レクサプロ
+T3	CHANGE_TRIGGER 40 43	始めた
+T4	TIME 51 58	最初の1ヶ月は
+T5	DISORDER 58 61	吐き気
+T6	DISORDER 66 71	食べられず
+T7	DISORDER 71 73	薬疹
+T8	OPINION 77 79	大変
+T9	TIME 84 86	今は
+T10	OPINION 86 93	飲んで良かった
+T11	DRUG 101 102	薬
+A1	Drug_Changes T2 started
+A2	Temporality T4 duration
+A3	Sentiment T8 negative
+A4	Temporality T9 point
+A5	Sentiment T10 positive
+R1	CAUSED Arg1:T2 Arg2:T5	
+R2	CAUSED Arg1:T2 Arg2:T7	
+R3	CAUSED Arg1:T5 Arg2:T6	
+R4	HAS_TIME Arg1:T5 Arg2:T4	
+R5	IS_OPINION_ABOUT Arg1:T8 Arg2:T7	
+R6	IS_OPINION_ABOUT Arg1:T8 Arg2:T6	
+R7	IS_OPINION_ABOUT Arg1:T10 Arg2:T2	

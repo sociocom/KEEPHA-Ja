@@ -1,0 +1,9 @@
+T1	USER 0 7	@mgro82
+T2	DRUG 22 27	レクサプロ
+T3	DRUG 28 32	SSRI
+T4	DISORDER 36 39	副作用
+T5	OPINION 40 46	ほとんどなく
+T6	OPINION 47 58	初診の人にも勧められる
+T7	DRUG 58 63	安全なお薬
+A1	Sentiment T5 positive
+A2	Sentiment T6 positive

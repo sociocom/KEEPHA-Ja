@@ -1,0 +1,12 @@
+T1	DRUG 0 7	インフェクサー
+T2	DISORDER 14 17	副作用
+T3	OPINION 17 25	こわくて飲めんわ
+T4	DISORDER 27 30	副作用
+T5	DRUG 33 38	レクサプロ
+T6	DISORDER 40 48	ぶっ倒れちゃった
+T7	DRUG 58 63	スルピリド
+T8	OPINION 64 66	安定
+A1	Sentiment T3 negative
+A2	Sentiment T8 positive
+R1	REFERS_TO Arg1:T4 Arg2:T6	
+R2	CAUSED Arg1:T5 Arg2:T6	

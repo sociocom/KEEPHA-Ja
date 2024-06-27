@@ -1,0 +1,19 @@
+T1	USER 0 16	@jgOSmm1SvSBc90h
+T2	DRUG 27 32	レクサプロ
+T3	CHANGE_TRIGGER 32 37	飲み始めて
+T4	TIME 37 41	日が浅い
+T5	DISORDER 46 49	副作用
+T6	OPINION 49 52	ひどい
+T7	DISORDER 59 62	副作用
+T8	DISORDER 63 67	苦しんだ
+T9	TIME 73 76	日中の
+T10	CHANGE_TRIGGER 82 85	増やし
+A1	Drug_Changes T2 increase
+A2	Temporality T4 duration
+A3	Sentiment T6 negative
+A4	Temporality T9 duration
+R1	CAUSED Arg1:T2 Arg2:T5	
+R2	CAUSED Arg1:T2 Arg2:T7	
+R3	IS_OPINION_ABOUT Arg1:T6 Arg2:T5	
+R4	CAUSED Arg1:T7 Arg2:T8	
+R5	SIGNALS_CHANGE_OF Arg1:T10 Arg2:T2	

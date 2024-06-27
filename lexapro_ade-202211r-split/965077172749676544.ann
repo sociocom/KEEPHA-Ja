@@ -1,0 +1,4 @@
+T1	DRUG 52 57	レクサプロ
+T2	CHANGE_TRIGGER 57 61	使い始め
+T3	DISORDER 61 64	吐き気
+A1	Drug_Changes T1 started
